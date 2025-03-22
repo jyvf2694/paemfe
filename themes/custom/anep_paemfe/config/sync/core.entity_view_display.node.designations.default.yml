@@ -1,0 +1,87 @@
+uuid: 1fb9b963-f0d8-4886-a9e3-f82804de4888
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.designations.body
+    - field.field.node.designations.field_date
+    - field.field.node.designations.field_department
+    - field.field.node.designations.field_file
+    - field.field.node.designations.field_pdf
+    - field.field.node.designations.field_subject
+    - field.field.node.designations.field_teaching
+    - node.type.designations
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.designations.default
+targetEntityType: node
+bundle: designations
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_department:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_pdf:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_subject:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_teaching:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

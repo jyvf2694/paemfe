@@ -1,0 +1,202 @@
+uuid: 5e17e5f6-15ba-4507-8918-dd50ce5d29e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.agenda
+    - node.type.article
+    - node.type.atd
+    - node.type.authorities
+    - node.type.called
+    - node.type.contact
+    - node.type.designations
+    - node.type.formalities_services
+    - node.type.news
+    - node.type.page
+    - node.type.regulations_resolutions
+    - node.type.release
+    - node.type.sabbatical_year
+    - node.type.scholarships_and_agreements
+    - node.type.trainings
+    - taxonomy.vocabulary.associated_state
+    - taxonomy.vocabulary.called_type
+    - taxonomy.vocabulary.communication_type
+    - taxonomy.vocabulary.department
+    - taxonomy.vocabulary.institutions
+    - taxonomy.vocabulary.normative_type
+    - taxonomy.vocabulary.public
+    - taxonomy.vocabulary.subject
+    - taxonomy.vocabulary.subtype
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.teaching
+    - taxonomy.vocabulary.theme
+    - taxonomy.vocabulary.turns
+  module:
+    - field_ui
+    - node
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+    - view_unpublished
+id: communications_administrator
+label: 'Admin Comunicación'
+weight: 0
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'create agenda content'
+  - 'create article content'
+  - 'create atd content'
+  - 'create authorities content'
+  - 'create called content'
+  - 'create contact content'
+  - 'create designations content'
+  - 'create formalities_services content'
+  - 'create news content'
+  - 'create page content'
+  - 'create regulations_resolutions content'
+  - 'create release content'
+  - 'create sabbatical_year content'
+  - 'create scholarships_and_agreements content'
+  - 'create terms in associated_state'
+  - 'create terms in called_type'
+  - 'create terms in communication_type'
+  - 'create terms in department'
+  - 'create terms in institutions'
+  - 'create terms in normative_type'
+  - 'create terms in public'
+  - 'create terms in subject'
+  - 'create terms in subtype'
+  - 'create terms in tags'
+  - 'create terms in teaching'
+  - 'create terms in theme'
+  - 'create terms in turns'
+  - 'create trainings content'
+  - 'delete own agenda content'
+  - 'delete own article content'
+  - 'delete own atd content'
+  - 'delete own authorities content'
+  - 'delete own called content'
+  - 'delete own contact content'
+  - 'delete own formalities_services content'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own regulations_resolutions content'
+  - 'delete own release content'
+  - 'delete own sabbatical_year content'
+  - 'delete own scholarships_and_agreements content'
+  - 'delete own trainings content'
+  - 'delete terms in associated_state'
+  - 'delete terms in called_type'
+  - 'delete terms in communication_type'
+  - 'delete terms in department'
+  - 'delete terms in institutions'
+  - 'delete terms in normative_type'
+  - 'delete terms in public'
+  - 'delete terms in subject'
+  - 'delete terms in subtype'
+  - 'delete terms in tags'
+  - 'delete terms in teaching'
+  - 'delete terms in theme'
+  - 'delete terms in turns'
+  - 'edit any agenda content'
+  - 'edit any article content'
+  - 'edit any atd content'
+  - 'edit any authorities content'
+  - 'edit any called content'
+  - 'edit any contact content'
+  - 'edit any formalities_services content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit any regulations_resolutions content'
+  - 'edit any release content'
+  - 'edit any sabbatical_year content'
+  - 'edit any scholarships_and_agreements content'
+  - 'edit any trainings content'
+  - 'edit own agenda content'
+  - 'edit own article content'
+  - 'edit own atd content'
+  - 'edit own authorities content'
+  - 'edit own called content'
+  - 'edit own contact content'
+  - 'edit own designations content'
+  - 'edit own formalities_services content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit own regulations_resolutions content'
+  - 'edit own release content'
+  - 'edit own sabbatical_year content'
+  - 'edit own scholarships_and_agreements content'
+  - 'edit own trainings content'
+  - 'edit terms in associated_state'
+  - 'edit terms in called_type'
+  - 'edit terms in communication_type'
+  - 'edit terms in department'
+  - 'edit terms in institutions'
+  - 'edit terms in normative_type'
+  - 'edit terms in public'
+  - 'edit terms in subject'
+  - 'edit terms in subtype'
+  - 'edit terms in tags'
+  - 'edit terms in teaching'
+  - 'edit terms in theme'
+  - 'edit terms in turns'
+  - 'revert agenda revisions'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert atd revisions'
+  - 'revert authorities revisions'
+  - 'revert called revisions'
+  - 'revert contact revisions'
+  - 'revert designations revisions'
+  - 'revert formalities_services revisions'
+  - 'revert news revisions'
+  - 'revert page revisions'
+  - 'revert regulations_resolutions revisions'
+  - 'revert release revisions'
+  - 'revert sabbatical_year revisions'
+  - 'revert scholarships_and_agreements revisions'
+  - 'revert trainings revisions'
+  - 'view agenda revisions'
+  - 'view all revisions'
+  - 'view any unpublished agenda content'
+  - 'view any unpublished article content'
+  - 'view any unpublished atd content'
+  - 'view any unpublished authorities content'
+  - 'view any unpublished called content'
+  - 'view any unpublished contact content'
+  - 'view any unpublished designations content'
+  - 'view any unpublished formalities_services content'
+  - 'view any unpublished news content'
+  - 'view any unpublished page content'
+  - 'view any unpublished regulations_resolutions content'
+  - 'view any unpublished release content'
+  - 'view any unpublished sabbatical_year content'
+  - 'view any unpublished scholarships_and_agreements content'
+  - 'view any unpublished trainings content'
+  - 'view article revisions'
+  - 'view atd revisions'
+  - 'view authorities revisions'
+  - 'view called revisions'
+  - 'view contact revisions'
+  - 'view designations revisions'
+  - 'view formalities_services revisions'
+  - 'view news revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view regulations_resolutions revisions'
+  - 'view release revisions'
+  - 'view sabbatical_year revisions'
+  - 'view scholarships_and_agreements revisions'
+  - 'view the administration theme'
+  - 'view trainings revisions'

@@ -1,0 +1,8 @@
+uuid: 9948466b-5471-46a0-86c2-42b665beede5
+langcode: es
+status: true
+dependencies: {  }
+id: dges
+label: '+ DGES'
+description: ''
+locked: false

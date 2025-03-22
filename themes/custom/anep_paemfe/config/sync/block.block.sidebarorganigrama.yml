@@ -1,0 +1,30 @@
+uuid: f719ecf6-2d82-4144-8ba2-38d4eb52b738
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0333d53a-29c9-45fd-bcad-071c8ff3cb58'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: sidebarorganigrama
+theme: dges
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'block_content:0333d53a-29c9-45fd-bcad-071c8ff3cb58'
+settings:
+  id: 'block_content:0333d53a-29c9-45fd-bcad-071c8ff3cb58'
+  label: 'Sidebar Organigrama'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/institucional/organigrama\r\n/institucional/organigrama/*"

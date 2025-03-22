@@ -1,0 +1,25 @@
+uuid: 436fdb04-9861-42d3-acbe-c5e9808cf169
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dges
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: dges_site_branding
+theme: dges
+region: top_header_form
+weight: -15
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

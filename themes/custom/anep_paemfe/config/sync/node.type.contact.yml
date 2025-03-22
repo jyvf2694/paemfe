@@ -1,0 +1,18 @@
+uuid: 2a9a2112-7cb7-4688-8f4a-8313be724b64
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Contactos
+type: contact
+description: 'Use este tipo de contenido para crear los contenidos de <em>Contactos</em>.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

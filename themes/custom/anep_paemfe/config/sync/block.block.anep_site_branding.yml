@@ -1,0 +1,25 @@
+uuid: e5e66fd3-a3a4-4c3a-83ea-531f596979b8
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - anep
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: anep_site_branding
+theme: anep
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

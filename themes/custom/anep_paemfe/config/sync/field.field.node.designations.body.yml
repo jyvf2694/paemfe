@@ -1,0 +1,23 @@
+uuid: dcc7e248-9502-4b35-b029-1538c3f5a1a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.designations
+  module:
+    - text
+id: node.designations.body
+field_name: body
+entity_type: node
+bundle: designations
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

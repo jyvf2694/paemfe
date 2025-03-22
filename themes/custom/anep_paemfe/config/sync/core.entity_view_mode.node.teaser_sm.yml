@@ -1,0 +1,10 @@
+uuid: 8a4790e0-e85b-4458-996b-863b4e0691a7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_sm
+label: 'Resumen SM'
+targetEntityType: node
+cache: true

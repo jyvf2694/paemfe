@@ -1,0 +1,18 @@
+uuid: 1ddb6db1-88e4-4836-bc74-6633a2fb9afc
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Comunicados
+type: release
+description: 'Use este tipo de contenido para crear los contenidos de <em>Comunicados</em>.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

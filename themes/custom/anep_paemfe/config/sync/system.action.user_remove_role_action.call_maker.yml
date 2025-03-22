@@ -1,0 +1,14 @@
+uuid: 4b57c7c3-1e8f-4e1e-bceb-644d8ac21419
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.call_maker
+  module:
+    - user
+id: user_remove_role_action.call_maker
+label: 'Elimina el rol Call maker al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: call_maker

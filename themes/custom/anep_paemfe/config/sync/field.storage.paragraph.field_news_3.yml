@@ -1,0 +1,20 @@
+uuid: 2f731956-b7e2-49bf-b99b-5c6364d17bc8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_news_3
+field_name: field_news_3
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

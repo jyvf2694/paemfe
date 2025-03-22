@@ -1,0 +1,49 @@
+uuid: 3e74874c-d96d-486d-9a0e-c0bd976278cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.highlighted_secondary
+    - field.field.node.news.body
+    - field.field.node.news.field_file_media
+    - field.field.node.news.field_image
+    - field.field.node.news.field_lead
+    - field.field.node.news.field_public
+    - field.field.node.news.field_subtype
+    - field.field.node.news.field_theme
+    - field.field.node.news.field_video_media
+    - node.type.news
+  module:
+    - svg_image
+    - user
+id: node.news.highlighted_secondary
+targetEntityType: node
+bundle: news
+mode: highlighted_secondary
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_file_media: true
+  field_lead: true
+  field_public: true
+  field_subtype: true
+  field_theme: true
+  field_video_media: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

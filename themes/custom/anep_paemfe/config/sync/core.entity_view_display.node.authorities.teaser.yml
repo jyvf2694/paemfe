@@ -1,0 +1,61 @@
+uuid: c30edffa-37aa-4adf-afd2-5b4e45d47ed9
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.authorities.body
+    - field.field.node.authorities.field_contact
+    - field.field.node.authorities.field_dependence
+    - field.field.node.authorities.field_image
+    - field.field.node.authorities.field_pdf
+    - field.field.node.authorities.field_position
+    - image.style.noticia_secundaria
+    - node.type.authorities
+  module:
+    - entity_reference_revisions
+    - svg_image
+    - user
+id: node.authorities.teaser
+targetEntityType: node
+bundle: authorities
+mode: teaser
+content:
+  field_contact:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: compact
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: noticia_secundaria
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_position:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_dependence: true
+  field_pdf: true
+  langcode: true
+  links: true

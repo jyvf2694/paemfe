@@ -1,0 +1,30 @@
+uuid: 6e55d64d-698f-4922-8bd0-a3f8ea1c8ba4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9bd89174-ff46-43ad-9595-e7eb92424799'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: sidebareducacionencontextodeencierroece
+theme: dges
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:9bd89174-ff46-43ad-9595-e7eb92424799'
+settings:
+  id: 'block_content:9bd89174-ff46-43ad-9595-e7eb92424799'
+  label: 'Sidebar - Educación en Contexto de Encierro / ECE'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/ece\r\n/ece/*"

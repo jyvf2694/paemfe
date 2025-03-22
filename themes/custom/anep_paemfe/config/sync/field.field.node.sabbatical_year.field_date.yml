@@ -1,0 +1,21 @@
+uuid: 0f225a65-f460-4efc-908a-bb8401ddaa19
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.sabbatical_year
+  module:
+    - datetime
+id: node.sabbatical_year.field_date
+field_name: field_date
+entity_type: node
+bundle: sabbatical_year
+label: Fecha
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

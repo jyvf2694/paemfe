@@ -1,0 +1,29 @@
+uuid: ec945eeb-0d9f-4729-9406-54e2b2ddda9e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_turns
+    - node.type.contact
+    - taxonomy.vocabulary.turns
+id: node.contact.field_turns
+field_name: field_turns
+entity_type: node
+bundle: contact
+label: Turnos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      turns: turns
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 16e25e1e-1419-4c10-b7a4-ac9b019844fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_associated_state
+    - paragraphs.paragraphs_type.contests_files
+    - taxonomy.vocabulary.associated_state
+id: paragraph.contests_files.field_associated_state
+field_name: field_associated_state
+entity_type: paragraph
+bundle: contests_files
+label: 'Estado asociado'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      associated_state: associated_state
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,39 @@
+uuid: bcab7d34-152d-46f6-a8b2-db24823a367d
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - dges_migration
+_core:
+  default_config_hash: cDEvo0mEVY0kWqSO-Cshv33Ip4KT82ywkmaUPHYG0N0
+id: normative_node_circular
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dges
+label: 'Migrate the normative content types of circular'
+source:
+  plugin: normative_node_circular
+  node_type: regulations_resolutions
+process:
+  type:
+    plugin: default_value
+    default_value: regulations_resolutions
+  title: title
+  status:
+    plugin: default_value
+    default_value: 1
+  body/value: introtext
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  field_file: file
+  uid: uid
+  created: created
+  changed: changed
+  field_normativity_type: normativity_type
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null

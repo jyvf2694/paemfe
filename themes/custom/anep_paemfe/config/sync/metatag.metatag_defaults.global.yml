@@ -1,0 +1,12 @@
+uuid: a18eb147-9af3-44e9-ab8b-e5d485ad7854
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  description: 'El Consejo de Educación Secundaria (CES) se crea el 11 de diciembre de 1935 por Ley 9.523. Es el órgano de la Administración Nacional de Educación Pública (ANEP) a cargo de impartir la educación secundaria de Uruguay. La educación secundaria es la continuación de la enseñanza primaria y habilita a estudios superiores terciarios. Tiene como fin esencial la cultura integral de sus estudiantes y tiende a la formación de ciudadanos conscientes de sus deberes sociales.'
+  title: '[current-page:title] | [site:name]'

@@ -1,0 +1,22 @@
+uuid: 21f52ba4-69dc-4c73-b023-8c5bbeb9fb98
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: alias_tipo_de_contenido_capacitaciones
+label: 'Alias tipo de contenido capacitaciones'
+type: 'canonical_entities:node'
+pattern: 'comunicacion/[node:content-type]/[node:title]'
+selection_criteria:
+  0cbe3b15-18bd-48f2-8b1d-0f35759e38b8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 0cbe3b15-18bd-48f2-8b1d-0f35759e38b8
+    context_mapping:
+      node: node
+    bundles:
+      trainings: trainings
+selection_logic: and
+weight: -5
+relationships: {  }

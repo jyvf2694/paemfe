@@ -1,0 +1,25 @@
+uuid: fc56eff3-fabf-44ec-97d4-d702e762da38
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.interes-a-la-comunidad
+  module:
+    - system
+  theme:
+    - dges
+id: interesalacomunidad
+theme: dges
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:interes-a-la-comunidad'
+settings:
+  id: 'system_menu_block:interes-a-la-comunidad'
+  label: 'Interés a la comunidad'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

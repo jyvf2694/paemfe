@@ -1,0 +1,24 @@
+uuid: 6d4e6b07-05c7-4209-a9cb-50b10b6dcb9a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.columns.field_columns
+    - paragraphs.paragraphs_type.columns
+  module:
+    - entity_reference_revisions
+id: paragraph.columns.default
+targetEntityType: paragraph
+bundle: columns
+mode: default
+content:
+  field_columns:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

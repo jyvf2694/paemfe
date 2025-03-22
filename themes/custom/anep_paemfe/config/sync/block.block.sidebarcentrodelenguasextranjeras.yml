@@ -1,0 +1,30 @@
+uuid: 1414ecae-4f6d-4714-9af7-3260f371179f
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9bfd3ad1-6d76-4728-be38-7a234e855665'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: sidebarcentrodelenguasextranjeras
+theme: dges
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:9bfd3ad1-6d76-4728-be38-7a234e855665'
+settings:
+  id: 'block_content:9bfd3ad1-6d76-4728-be38-7a234e855665'
+  label: 'Sidebar - Centrode lenguas extranjeras'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/centro-de-lenguas-extranjeras\r\n/centro-de-lenguas-extranjeras/*"

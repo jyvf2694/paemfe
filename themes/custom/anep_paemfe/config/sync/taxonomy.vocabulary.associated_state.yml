@@ -1,0 +1,8 @@
+uuid: c8d5f853-033a-4a61-8976-aab297fa20a9
+langcode: es
+status: true
+dependencies: {  }
+name: 'Estado asociado'
+vid: associated_state
+description: ''
+weight: 0

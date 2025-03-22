@@ -1,0 +1,30 @@
+uuid: ec6f8c6d-9ef3-4a0a-9742-906378e73562
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:17d1de07-797b-4c53-b89f-bf45c592d92f'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: sidebardepartamentointegraldelestudiante
+theme: dges
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:17d1de07-797b-4c53-b89f-bf45c592d92f'
+settings:
+  id: 'block_content:17d1de07-797b-4c53-b89f-bf45c592d92f'
+  label: 'Sidebar Departamento Integral del Estudiante'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/departamento-integral-del-estudiante\r\n/departamento-integral-del-estudiante/*"

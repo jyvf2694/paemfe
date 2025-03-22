@@ -1,0 +1,46 @@
+uuid: 11bf9478-458b-43cb-bd2b-8ca38c2efa75
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact.field_department
+    - field.field.node.contact.field_direction
+    - field.field.node.contact.field_email
+    - field.field.node.contact.field_link
+    - field.field.node.contact.field_name
+    - field.field.node.contact.field_name_inspector
+    - field.field.node.contact.field_phone
+    - field.field.node.contact.field_schedule
+    - field.field.node.contact.field_subject
+    - field.field.node.contact.field_team
+    - field.field.node.contact.field_turns
+    - field.field.node.contact.field_type
+    - node.type.contact
+  module:
+    - user
+id: node.contact.teaser
+targetEntityType: node
+bundle: contact
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_department: true
+  field_direction: true
+  field_email: true
+  field_link: true
+  field_name: true
+  field_name_inspector: true
+  field_phone: true
+  field_schedule: true
+  field_subject: true
+  field_team: true
+  field_turns: true
+  field_type: true
+  langcode: true
+  search_api_excerpt: true

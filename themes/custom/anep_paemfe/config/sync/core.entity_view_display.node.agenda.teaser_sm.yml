@@ -1,0 +1,34 @@
+uuid: 28d2d375-b90c-4d75-ae79-3bb0b1c4b5cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_sm
+    - field.field.node.agenda.body
+    - field.field.node.agenda.field_end_date
+    - field.field.node.agenda.field_image
+    - field.field.node.agenda.field_start_date
+    - node.type.agenda
+  module:
+    - datetime
+    - user
+id: node.agenda.teaser_sm
+targetEntityType: node
+bundle: agenda
+mode: teaser_sm
+content:
+  field_start_date:
+    type: datetime_custom
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: d-M
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_end_date: true
+  field_image: true
+  langcode: true
+  links: true

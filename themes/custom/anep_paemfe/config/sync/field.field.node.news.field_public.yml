@@ -1,0 +1,29 @@
+uuid: 6017d946-64cc-482e-8d80-028a7b54fc14
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public
+    - node.type.news
+    - taxonomy.vocabulary.public
+id: node.news.field_public
+field_name: field_public
+entity_type: node
+bundle: news
+label: Público
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      public: public
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

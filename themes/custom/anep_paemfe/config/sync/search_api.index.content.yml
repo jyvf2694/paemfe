@@ -1,0 +1,129 @@
+uuid: 9dde2a9f-17e5-42cd-bba2-3eda14566b81
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_lead
+    - field.storage.node.field_ocr_description
+    - search_api.server.db_content
+  module:
+    - node
+    - search_api
+id: content
+name: Content
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_lead:
+    label: Resumen
+    datasource_id: 'entity:node'
+    property_path: field_lead
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_lead
+  field_ocr_description:
+    label: 'Descripcion OCR'
+    datasource_id: 'entity:node'
+    property_path: field_ocr_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_ocr_description
+  format:
+    label: 'Descripcion OCR » Formato de texto'
+    datasource_id: 'entity:node'
+    property_path: 'field_ocr_description:format'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_ocr_description
+  node_grants:
+    label: 'Información de acceso al nodo'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  processed:
+    label: 'Descripcion OCR » Texto procesado'
+    datasource_id: 'entity:node'
+    property_path: 'field_ocr_description:processed'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_ocr_description
+  status:
+    label: status
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  title:
+    label: Título
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  transliteration:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: true
+    fields:
+      - body
+      - field_lead
+      - field_ocr_description
+      - format
+      - processed
+      - title
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: db_content

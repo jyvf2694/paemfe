@@ -1,0 +1,10 @@
+uuid: db322294-4c15-41fa-a8ec-dc70d170a2e8
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.teaser
+label: Teaser
+targetEntityType: paragraph
+cache: true

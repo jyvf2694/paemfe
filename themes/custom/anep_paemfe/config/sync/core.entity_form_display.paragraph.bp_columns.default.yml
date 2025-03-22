@@ -1,0 +1,61 @@
+uuid: b04b2f24-3571-4ed7-a7cf-f0394f6e2e60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_columns.bp_background
+    - field.field.paragraph.bp_columns.bp_column_content
+    - field.field.paragraph.bp_columns.bp_header
+    - field.field.paragraph.bp_columns.bp_width
+    - paragraphs.paragraphs_type.bp_columns
+  module:
+    - paragraphs
+_core:
+  default_config_hash: yEa62V8aDMAhq8D-DfFKLMfwuSIeTR8SO7ejqWQAnkU
+id: paragraph.bp_columns.default
+targetEntityType: paragraph
+bundle: bp_columns
+mode: default
+content:
+  bp_background:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  bp_column_content:
+    type: paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: 'Column Content'
+      title_plural: 'Column Contents'
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  bp_header:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_width:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

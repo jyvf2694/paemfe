@@ -1,0 +1,30 @@
+uuid: 7dcddfc0-51fd-4e9b-bfc4-2b25f2925e5f
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:51c23c14-c72c-4be7-b711-0cb01f351de4'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: sidebareleccionesvirtuales
+theme: dges
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:51c23c14-c72c-4be7-b711-0cb01f351de4'
+settings:
+  id: 'block_content:51c23c14-c72c-4be7-b711-0cb01f351de4'
+  label: 'Sidebar - elecciones virtuales'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/elecciones-virtuales\r\n/elecciones-virtuales/*"

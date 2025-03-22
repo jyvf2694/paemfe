@@ -1,0 +1,21 @@
+uuid: 9fb59810-5322-4121-b7a0-e32e569cb6a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_text
+    - paragraphs.paragraphs_type.contests_files
+  module:
+    - text
+id: paragraph.contests_files.bp_text
+field_name: bp_text
+entity_type: paragraph
+bundle: contests_files
+label: Descripción
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

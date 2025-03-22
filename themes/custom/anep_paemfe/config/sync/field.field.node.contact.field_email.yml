@@ -1,0 +1,19 @@
+uuid: f4da53da-d729-47a6-bbbc-1383a988fe61
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.contact
+id: node.contact.field_email
+field_name: field_email
+entity_type: node
+bundle: contact
+label: 'Correo electrónico'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

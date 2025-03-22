@@ -1,0 +1,14 @@
+uuid: 0e6f165e-3a68-4e8b-bdcd-c514553f0093
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.call_approver
+  module:
+    - user
+id: user_remove_role_action.call_approver
+label: 'Elimina el rol Call approver al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: call_approver

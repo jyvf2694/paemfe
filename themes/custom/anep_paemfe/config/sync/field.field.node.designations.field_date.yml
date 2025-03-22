@@ -1,0 +1,21 @@
+uuid: 647b4acb-3996-418f-9204-459ee2c2d013
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.designations
+  module:
+    - datetime
+id: node.designations.field_date
+field_name: field_date
+entity_type: node
+bundle: designations
+label: 'Fecha de elección'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

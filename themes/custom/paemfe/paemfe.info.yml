@@ -1,0 +1,31 @@
+name: paemfe
+type: theme
+description: template Paemfe
+# version: VERSION
+package: Core
+base theme: stable
+core_version_requirement: ^8 || ^9
+libraries: 
+  - paemfe/global-styling
+  - paemfe/js
+
+#Regions
+regions:
+  content: 'Main Content'
+  presentacion: 'Presentacion'
+  header: 'Header'
+  footer: 'Footer'
+  mainnavigation: 'Main Navigation'
+  sidebarmenu: 'Sidebar Menu'
+  sidebar_second: 'Sidebar second'
+  highlighted: 'Highlighted'
+  buscador: 'Buscador'
+  oferta: 'Oferta'
+  ofertamovil: 'Ofertamovil'
+  breadcrumb: 'Breadcrumb'
+  titulo: 'Titulo'
+  logo: 'Logo'
+  search: 'SearchBox'
+  menupie: 'Menu Pie'
+  calendario: 'Calendario'
+  agendated: 'Agendated'

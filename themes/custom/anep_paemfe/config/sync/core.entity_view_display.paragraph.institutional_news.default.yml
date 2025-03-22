@@ -1,0 +1,42 @@
+uuid: a80c1c29-5586-4f39-ae22-d7d8d5cf4d30
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.institutional_news.field_news_1
+    - field.field.paragraph.institutional_news.field_news_2
+    - field.field.paragraph.institutional_news.field_news_3
+    - paragraphs.paragraphs_type.institutional_news
+id: paragraph.institutional_news.default
+targetEntityType: paragraph
+bundle: institutional_news
+mode: default
+content:
+  field_news_1:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: cards
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_news_2:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: cards
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_news_3:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: cards
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

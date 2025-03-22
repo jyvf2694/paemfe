@@ -1,0 +1,19 @@
+
+global-styling:
+  version: 1.x
+  css:
+    theme:
+       css/normalize.css: {}
+       css/base.css: {}
+       css/styles.css: {}
+
+  js:
+      js/menu.js: {}
+      js/dropdown.js: {}
+
+  dependencies:
+      - core/jquery
+      - core/drupal
+      - core/popperjs
+    
+  

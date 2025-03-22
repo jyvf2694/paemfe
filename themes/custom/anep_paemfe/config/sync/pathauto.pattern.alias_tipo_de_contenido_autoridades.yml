@@ -1,0 +1,22 @@
+uuid: 9f3466e6-2255-4c6d-a38a-e237859b8af2
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: alias_tipo_de_contenido_autoridades
+label: 'Alias tipo de contenido autoridades'
+type: 'canonical_entities:node'
+pattern: 'institucional/[node:content-type]/[node:title]'
+selection_criteria:
+  e1ca6b6a-83a9-4a90-a0fc-b4dac5c55ea4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e1ca6b6a-83a9-4a90-a0fc-b4dac5c55ea4
+    context_mapping:
+      node: node
+    bundles:
+      authorities: authorities
+selection_logic: and
+weight: -5
+relationships: {  }

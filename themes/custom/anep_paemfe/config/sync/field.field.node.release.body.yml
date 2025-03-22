@@ -1,0 +1,23 @@
+uuid: 30d18db3-01d8-416c-95f7-7d463dff8231
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.release
+  module:
+    - text
+id: node.release.body
+field_name: body
+entity_type: node
+bundle: release
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

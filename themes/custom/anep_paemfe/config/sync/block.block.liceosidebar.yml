@@ -1,0 +1,27 @@
+uuid: 5f0b87b8-c9d0-40f5-98cb-87f219102cd2
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dges
+id: liceosidebar
+theme: dges
+region: sidebar_second
+weight: -13
+provider: null
+plugin: 'block_content:8de087d4-27f0-40f8-bcb1-bb24d857dafb'
+settings:
+  id: 'block_content:8de087d4-27f0-40f8-bcb1-bb24d857dafb'
+  label: 'Sidebar Liceos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/69328

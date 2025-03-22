@@ -1,0 +1,22 @@
+uuid: f64cd027-2762-4714-89bd-c58cf0d31b3b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: alias_tipo_de_contenido_contacto
+label: 'Alias tipo de contenido contacto'
+type: 'canonical_entities:node'
+pattern: 'contacto/direcciones-y-telefonos/[node:title]'
+selection_criteria:
+  1cd3cfbf-494f-4480-bb54-f231d155544a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 1cd3cfbf-494f-4480-bb54-f231d155544a
+    context_mapping:
+      node: node
+    bundles:
+      contact: contact
+selection_logic: and
+weight: -5
+relationships: {  }

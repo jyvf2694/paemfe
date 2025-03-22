@@ -1,0 +1,30 @@
+uuid: bc01e694-5b4e-4afb-92e7-52833a57326d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:559fc8ba-74d6-40b8-9862-7450529c28d5'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: sidebardesignaciones
+theme: dges
+region: sidebar_second
+weight: -15
+provider: null
+plugin: 'block_content:559fc8ba-74d6-40b8-9862-7450529c28d5'
+settings:
+  id: 'block_content:559fc8ba-74d6-40b8-9862-7450529c28d5'
+  label: 'Sidebar Designaciones'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/designaciones\r\n/designaciones/*\r\n/designaciones/calendarios\r\n/designaciones/calendarios/*"

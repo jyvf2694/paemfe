@@ -1,0 +1,25 @@
+uuid: dd02c680-813b-4344-83c1-e7d4ff98ca53
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.dges
+  module:
+    - system
+  theme:
+    - dges
+id: dges
+theme: dges
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:dges'
+settings:
+  id: 'system_menu_block:dges'
+  label: DGES
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

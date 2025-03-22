@@ -1,0 +1,25 @@
+uuid: 8c2658c7-3929-4c38-80bd-08e13dfc3ca0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.top-menu
+  module:
+    - system
+  theme:
+    - dges
+id: menusuperior
+theme: dges
+region: secondary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:top-menu'
+settings:
+  id: 'system_menu_block:top-menu'
+  label: 'Menu Superior'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

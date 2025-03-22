@@ -1,0 +1,20 @@
+uuid: 9f2b2000-56c4-48b1-8b68-da51f59621d4
+langcode: es
+status: true
+dependencies:
+  theme:
+    - dges
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: dges_primary_admin_actions
+theme: dges
+region: highlighted
+weight: -15
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

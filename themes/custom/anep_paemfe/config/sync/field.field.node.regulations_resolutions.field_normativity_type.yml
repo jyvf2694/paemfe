@@ -1,0 +1,29 @@
+uuid: 2993fd49-d070-4153-b8c0-7f7db68f00ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_normativity_type
+    - node.type.regulations_resolutions
+    - taxonomy.vocabulary.normative_type
+id: node.regulations_resolutions.field_normativity_type
+field_name: field_normativity_type
+entity_type: node
+bundle: regulations_resolutions
+label: 'Tipo de norma'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      normative_type: normative_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

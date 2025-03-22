@@ -1,0 +1,55 @@
+uuid: 2156c894-fabd-46f5-aa54-cc434974e7a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.teaser
+    - field.field.paragraph.bp_photo.bp_image_field
+    - field.field.paragraph.bp_photo.field_bp_link_only
+    - field.field.paragraph.bp_photo.field_lead
+    - field.field.paragraph.bp_photo.field_title
+    - paragraphs.paragraphs_type.bp_photo
+  module:
+    - link
+    - svg_image
+id: paragraph.bp_photo.teaser
+targetEntityType: paragraph
+bundle: bp_photo
+mode: teaser
+content:
+  bp_image_field:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_bp_link_only:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_lead:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_title: true

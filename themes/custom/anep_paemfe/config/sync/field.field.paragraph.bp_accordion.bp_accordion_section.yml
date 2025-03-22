@@ -1,0 +1,129 @@
+uuid: 96c6f279-6f79-4218-b64b-4dfbac04ec9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_accordion_section
+    - paragraphs.paragraphs_type.bp_accordion
+    - paragraphs.paragraphs_type.bp_accordion_section
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 8peSrC5r9iuBtIW44MZORzyqTQujbwXkwsiS01Z-Wlo
+id: paragraph.bp_accordion.bp_accordion_section
+field_name: bp_accordion_section
+entity_type: paragraph
+bundle: bp_accordion
+label: 'Accordion Section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      bp_accordion_section: bp_accordion_section
+    negate: 0
+    target_bundles_drag_drop:
+      bp_accordion:
+        weight: 11
+        enabled: false
+      bp_accordion_section:
+        weight: 10
+        enabled: true
+      bp_blank:
+        weight: 12
+        enabled: false
+      bp_block:
+        weight: 37
+        enabled: false
+      bp_carousel:
+        weight: 13
+        enabled: false
+      bp_column_wrapper:
+        weight: 42
+        enabled: false
+      bp_columns:
+        weight: 14
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 40
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 41
+        enabled: false
+      bp_image:
+        weight: 15
+        enabled: false
+      bp_modal:
+        weight: 44
+        enabled: false
+      bp_photo:
+        weight: 45
+        enabled: false
+      bp_simple:
+        weight: 16
+        enabled: false
+      bp_tab_section:
+        weight: 48
+        enabled: false
+      bp_tabs:
+        weight: 47
+        enabled: false
+      bp_view:
+        weight: 17
+        enabled: false
+      column:
+        weight: 50
+        enabled: false
+      columns:
+        weight: 51
+        enabled: false
+      community_news:
+        weight: 52
+        enabled: false
+      contact:
+        weight: 53
+        enabled: false
+      contests_files:
+        weight: 54
+        enabled: false
+      flip_cards:
+        weight: 55
+        enabled: false
+      highlighted_cards:
+        weight: 56
+        enabled: false
+      image_videos:
+        weight: 57
+        enabled: false
+      image_with_text:
+        weight: 58
+        enabled: false
+      institutional_news:
+        weight: 59
+        enabled: false
+      link_list:
+        weight: 60
+        enabled: false
+      link_list_item:
+        weight: 61
+        enabled: false
+      list_of_links:
+        weight: 62
+        enabled: false
+      noticias_institucionales_parent:
+        weight: 63
+        enabled: false
+      title:
+        weight: 64
+        enabled: false
+      title_grid:
+        weight: 65
+        enabled: false
+      videos:
+        weight: 66
+        enabled: false
+field_type: entity_reference_revisions

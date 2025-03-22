@@ -1,0 +1,25 @@
+uuid: 40b72bdb-dc3b-447f-ae84-efd57d8e2fa7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.regulations_resolutions
+  module:
+    - node
+    - system
+    - toolbar
+    - tour
+    - view_unpublished
+id: regulations_maker
+label: 'Creador de Normativa'
+weight: 8
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'create regulations_resolutions content'
+  - 'view any unpublished regulations_resolutions content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

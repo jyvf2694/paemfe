@@ -1,0 +1,21 @@
+uuid: 83b7ddc6-dfee-4334-845c-1fe998fc1271
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ocr_description
+    - node.type.regulations_resolutions
+  module:
+    - text
+id: node.regulations_resolutions.field_ocr_description
+field_name: field_ocr_description
+entity_type: node
+bundle: regulations_resolutions
+label: 'Descripcion OCR'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

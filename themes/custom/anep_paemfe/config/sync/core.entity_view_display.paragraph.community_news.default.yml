@@ -1,0 +1,42 @@
+uuid: 0fe838b4-0737-4002-ac3c-736fb5d959c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.community_news.field_news_1
+    - field.field.paragraph.community_news.field_news_2
+    - field.field.paragraph.community_news.field_news_3
+    - paragraphs.paragraphs_type.community_news
+id: paragraph.community_news.default
+targetEntityType: paragraph
+bundle: community_news
+mode: default
+content:
+  field_news_1:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card_media
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_news_2:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card_media
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_news_3:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card_media
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

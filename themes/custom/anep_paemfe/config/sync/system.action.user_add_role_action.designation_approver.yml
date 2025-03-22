@@ -1,0 +1,14 @@
+uuid: 5a384425-8ae3-4eb7-b51c-537382d7f40a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.designation_approver
+  module:
+    - user
+id: user_add_role_action.designation_approver
+label: 'Añade el rol Designation Approver al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: designation_approver

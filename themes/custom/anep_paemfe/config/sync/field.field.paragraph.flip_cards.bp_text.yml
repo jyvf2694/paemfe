@@ -1,0 +1,21 @@
+uuid: 266fecca-01c5-4bae-9f55-44cb044cdf5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_text
+    - paragraphs.paragraphs_type.flip_cards
+  module:
+    - text
+id: paragraph.flip_cards.bp_text
+field_name: bp_text
+entity_type: paragraph
+bundle: flip_cards
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

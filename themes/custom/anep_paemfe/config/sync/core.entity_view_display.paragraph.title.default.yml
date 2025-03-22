@@ -1,0 +1,36 @@
+uuid: 9b5f8d59-a8fc-4185-8ae7-b5936b0c6c08
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title.bp_link
+    - field.field.paragraph.title.field_title
+    - paragraphs.paragraphs_type.title
+  module:
+    - link
+id: paragraph.title.default
+targetEntityType: paragraph
+bundle: title
+mode: default
+content:
+  bp_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

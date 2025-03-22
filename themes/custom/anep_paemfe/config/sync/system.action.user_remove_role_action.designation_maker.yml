@@ -1,0 +1,14 @@
+uuid: 00757b4d-4c4b-4af5-a3ae-bf97741c7259
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.designation_maker
+  module:
+    - user
+id: user_remove_role_action.designation_maker
+label: 'Elimina el rol Designation maker al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: designation_maker

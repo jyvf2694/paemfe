@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: es
+uuid: 72deef13-ac32-48f8-ae7c-90fa289c27ab
+name: DGES
+mail: test@correo.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/60350
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es

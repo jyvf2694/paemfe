@@ -1,0 +1,30 @@
+uuid: 4b42ac2f-9cc3-466f-a3c0-263d811318c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.designations
+  module:
+    - node
+    - system
+    - toolbar
+    - tour
+    - view_unpublished
+id: designation_approver
+label: 'Aprobador de Designaciones'
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer nodes'
+  - 'create designations content'
+  - 'delete designations revisions'
+  - 'edit any designations content'
+  - 'revert all revisions'
+  - 'view all revisions'
+  - 'view any unpublished designations content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

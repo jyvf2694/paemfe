@@ -1,0 +1,14 @@
+uuid: 77bb727d-f295-4934-88f5-184846dac63e
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regulation_approver
+  module:
+    - user
+id: user_remove_role_action.regulation_approver
+label: 'Elimina el rol regulation_approver al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regulation_approver

@@ -1,0 +1,26 @@
+_core:
+  default_config_hash: 4FhrEwOM9yJ8neEoN77sxroTRBUXqRwap0KSJtFnYJs
+langcode: es
+abs_urls: false
+admin_theme: false
+roles_profiles:
+  communications_administrator:
+    public: admin
+  content_editor:
+    public: member
+  administrator:
+    public: admin
+  designation_maker:
+    public: member
+  designation_approver:
+    public: member
+  call_maker:
+    public: member
+  call_approver:
+    public: member
+  regulations_maker:
+    public: member
+  regulation_approver:
+    public: member
+  training_creator_and_approver:
+    public: member

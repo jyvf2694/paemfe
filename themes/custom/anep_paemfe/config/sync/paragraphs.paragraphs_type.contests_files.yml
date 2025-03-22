@@ -1,0 +1,10 @@
+uuid: e2a0c627-e957-4a48-a8f3-7a5207f7a193
+langcode: es
+status: true
+dependencies: {  }
+id: contests_files
+label: 'Archivo de Concursos'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

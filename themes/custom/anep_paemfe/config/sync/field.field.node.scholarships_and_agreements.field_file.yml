@@ -1,0 +1,27 @@
+uuid: 9be66ee8-896b-47fa-b38e-aeb924fb6dd9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.scholarships_and_agreements
+  module:
+    - file
+id: node.scholarships_and_agreements.field_file
+field_name: field_file
+entity_type: node
+bundle: scholarships_and_agreements
+label: Adjuntos
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc'
+  max_filesize: 20MB
+  description_field: false
+field_type: file

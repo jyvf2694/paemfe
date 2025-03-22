@@ -1,0 +1,10 @@
+uuid: 4a39d3e8-1bca-4434-8d75-8fe7393c7fd0
+langcode: es
+status: true
+dependencies: {  }
+id: image_videos
+label: 'Foto del Día con Vídeos'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

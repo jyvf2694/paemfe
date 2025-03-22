@@ -1,0 +1,15 @@
+uuid: db0a9c74-03c9-49d2-bab4-1320eb1d31b3
+langcode: es
+status: true
+dependencies: {  }
+name: card_lg
+label: 'Card LG'
+effects:
+  f02cf23c-749c-415d-a4c2-e6a684dfd8e2:
+    uuid: f02cf23c-749c-415d-a4c2-e6a684dfd8e2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 688
+      height: 387
+      anchor: center-center

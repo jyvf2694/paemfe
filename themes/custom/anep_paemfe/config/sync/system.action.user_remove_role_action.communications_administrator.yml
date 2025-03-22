@@ -1,0 +1,14 @@
+uuid: 328efeb1-27ec-4f06-8cfb-1db53bad023d
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.communications_administrator
+  module:
+    - user
+id: user_remove_role_action.communications_administrator
+label: 'Elimina el rol communications administrator al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: communications_administrator

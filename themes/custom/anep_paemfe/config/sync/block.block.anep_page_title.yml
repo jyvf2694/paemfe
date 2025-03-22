@@ -1,0 +1,20 @@
+uuid: 43d998d8-d26c-4bad-b69c-9ae8081ddd14
+langcode: es
+status: true
+dependencies:
+  theme:
+    - anep
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: anep_page_title
+theme: anep
+region: top_header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility: {  }

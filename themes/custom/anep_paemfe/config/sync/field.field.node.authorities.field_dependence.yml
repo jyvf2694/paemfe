@@ -1,0 +1,29 @@
+uuid: 970f5fac-f3a6-4431-a48f-c9a2d70091f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dependence
+    - node.type.authorities
+    - taxonomy.vocabulary.institutions
+id: node.authorities.field_dependence
+field_name: field_dependence
+entity_type: node
+bundle: authorities
+label: Dependencia
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      institutions: institutions
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

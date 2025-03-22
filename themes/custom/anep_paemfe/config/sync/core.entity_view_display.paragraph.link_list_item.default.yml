@@ -1,0 +1,45 @@
+uuid: a1ce6c11-3e9f-4d24-a6c6-421342bd695b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_list_item.bp_image_field
+    - field.field.paragraph.link_list_item.bp_link
+    - image.style.medium
+    - paragraphs.paragraphs_type.link_list_item
+  module:
+    - link
+    - svg_image
+id: paragraph.link_list_item.default
+targetEntityType: paragraph
+bundle: link_list_item
+mode: default
+content:
+  bp_image_field:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  bp_link:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

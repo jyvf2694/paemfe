@@ -1,0 +1,27 @@
+uuid: 2762cb38-1385-4df3-9ee7-9814248c7c8f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_grid.field_link_limit
+    - paragraphs.paragraphs_type.title_grid
+  module:
+    - link
+id: paragraph.title_grid.default
+targetEntityType: paragraph
+bundle: title_grid
+mode: default
+content:
+  field_link_limit:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

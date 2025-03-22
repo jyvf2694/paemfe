@@ -1,0 +1,23 @@
+uuid: 127c6ac8-7b9d-4fa5-94aa-4c930eedaeb4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.scholarships_and_agreements
+  module:
+    - link
+id: node.scholarships_and_agreements.field_link
+field_name: field_link
+entity_type: node
+bundle: scholarships_and_agreements
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

@@ -1,0 +1,22 @@
+uuid: 504862b6-0940-4954-ad0c-d473b6697e22
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: alias_tipo_de_contenido_ano_sabatico
+label: 'Alias tipo de contenido publicaciones docentes'
+type: 'canonical_entities:node'
+pattern: 'comunicacion/[node:content-type]/[node:title]'
+selection_criteria:
+  0f09f8a8-4ff6-4403-b813-910c96dddc5b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 0f09f8a8-4ff6-4403-b813-910c96dddc5b
+    context_mapping:
+      node: node
+    bundles:
+      sabbatical_year: sabbatical_year
+selection_logic: and
+weight: -5
+relationships: {  }

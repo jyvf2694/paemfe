@@ -1,0 +1,22 @@
+uuid: 8ade3af0-26de-4545-bda7-c9d1728ea2b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.designations
+id: node.designations.status
+field_name: status
+entity_type: node
+bundle: designations
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

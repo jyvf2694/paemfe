@@ -1,0 +1,25 @@
+uuid: f774bf16-d1e6-4cb5-9b23-1f4549e7c61f
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dc7e2ee0-01f9-4c8a-8ab8-ed3c4feabc78'
+  module:
+    - block_content
+  theme:
+    - dges
+id: footer
+theme: dges
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:dc7e2ee0-01f9-4c8a-8ab8-ed3c4feabc78'
+settings:
+  id: 'block_content:dc7e2ee0-01f9-4c8a-8ab8-ed3c4feabc78'
+  label: Footer
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

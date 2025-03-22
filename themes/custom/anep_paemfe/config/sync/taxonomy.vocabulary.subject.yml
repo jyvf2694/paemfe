@@ -1,0 +1,8 @@
+uuid: d7574bfd-626f-45f6-843d-e6a7354f23cb
+langcode: es
+status: true
+dependencies: {  }
+name: Asignatura
+vid: subject
+description: ''
+weight: 0

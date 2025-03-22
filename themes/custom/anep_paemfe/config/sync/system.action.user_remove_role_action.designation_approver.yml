@@ -1,0 +1,14 @@
+uuid: 2751cb71-d8f5-46db-9d1f-e57ddc9f15f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.designation_approver
+  module:
+    - user
+id: user_remove_role_action.designation_approver
+label: 'Elimina el rol Designation Approver al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: designation_approver

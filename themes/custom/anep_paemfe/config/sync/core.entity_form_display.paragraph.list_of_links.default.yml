@@ -1,0 +1,25 @@
+uuid: 6f50346f-0918-4723-bb44-a074e9b9e2db
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_of_links.bp_link
+    - paragraphs.paragraphs_type.list_of_links
+  module:
+    - link
+id: paragraph.list_of_links.default
+targetEntityType: paragraph
+bundle: list_of_links
+mode: default
+content:
+  bp_link:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

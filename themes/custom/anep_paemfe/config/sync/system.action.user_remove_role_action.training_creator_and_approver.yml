@@ -1,0 +1,14 @@
+uuid: 3e5b617d-05d5-4d72-a1dd-9bb5fea9d522
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.training_creator_and_approver
+  module:
+    - user
+id: user_remove_role_action.training_creator_and_approver
+label: 'Elimina el rol Training Creator and Approver al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: training_creator_and_approver

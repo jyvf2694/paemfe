@@ -1,0 +1,25 @@
+uuid: c89b24b7-42c4-4ebb-8e0b-f03505fcacec
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.card_lg
+    - image.style.card_md
+    - image.style.card_xs
+  theme:
+    - dges
+id: card
+label: Card
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: card_lg
+    breakpoint_id: bootstrap_barrio.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: card_md
+    breakpoint_id: bootstrap_barrio.small
+    multiplier: 1x
+breakpoint_group: dges
+fallback_image_style: card_xs

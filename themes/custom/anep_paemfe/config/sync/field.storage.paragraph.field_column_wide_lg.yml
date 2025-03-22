@@ -1,0 +1,57 @@
+uuid: 0af37ba4-97f7-4a3c-88fd-048d5325e48a
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_column_wide_lg
+field_name: field_column_wide_lg
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: '1 - 12'
+    -
+      value: '2'
+      label: '2 - 12'
+    -
+      value: '3'
+      label: '3 - 12'
+    -
+      value: '4'
+      label: '4 - 12'
+    -
+      value: '5'
+      label: '5 - 12'
+    -
+      value: '6'
+      label: '6 - 12'
+    -
+      value: '7'
+      label: '7 - 12'
+    -
+      value: '8'
+      label: '8 - 12'
+    -
+      value: '9'
+      label: '9 - 12'
+    -
+      value: '10'
+      label: '10 - 12'
+    -
+      value: '11'
+      label: '11 - 12'
+    -
+      value: '12'
+      label: '12 - 12'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

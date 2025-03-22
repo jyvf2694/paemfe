@@ -1,0 +1,30 @@
+uuid: 21aa34fc-3e51-4454-9e35-017858044fec
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.called
+  module:
+    - node
+    - system
+    - toolbar
+    - tour
+    - view_unpublished
+id: call_approver
+label: 'Aprobador de Llamados'
+weight: 7
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer nodes'
+  - 'create called content'
+  - 'delete called revisions'
+  - 'edit any called content'
+  - 'revert all revisions'
+  - 'view all revisions'
+  - 'view any unpublished called content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

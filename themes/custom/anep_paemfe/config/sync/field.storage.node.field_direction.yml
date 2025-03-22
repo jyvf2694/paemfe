@@ -1,0 +1,21 @@
+uuid: 225a6775-b93b-4d76-853a-b5e0b81caa3a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_direction
+field_name: field_direction
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

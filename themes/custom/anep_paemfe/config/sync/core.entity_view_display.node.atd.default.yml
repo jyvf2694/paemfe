@@ -1,0 +1,64 @@
+uuid: 46405480-76d5-4430-b162-5c9c17d0ad2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.atd.body
+    - field.field.node.atd.field_file
+    - field.field.node.atd.field_image
+    - field.field.node.atd.field_lead
+    - node.type.atd
+  module:
+    - file
+    - svg_image
+    - text
+    - user
+id: node.atd.default
+targetEntityType: node
+bundle: atd
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_lead:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true

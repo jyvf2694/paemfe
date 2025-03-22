@@ -1,0 +1,47 @@
+uuid: 2d6492f8-e8f6-4723-967b-02e10f50270f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.community_news.field_news_1
+    - field.field.paragraph.community_news.field_news_2
+    - field.field.paragraph.community_news.field_news_3
+    - paragraphs.paragraphs_type.community_news
+id: paragraph.community_news.default
+targetEntityType: paragraph
+bundle: community_news
+mode: default
+content:
+  field_news_1:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_news_2:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_news_3:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

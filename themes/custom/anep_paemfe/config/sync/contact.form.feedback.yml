@@ -1,0 +1,14 @@
+uuid: 064d3c44-7e5d-43bc-8593-de853de0285b
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Comentarios sobre el sitio web'
+recipients:
+  - test@correo.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

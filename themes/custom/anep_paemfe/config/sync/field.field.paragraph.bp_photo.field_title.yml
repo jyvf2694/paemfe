@@ -1,0 +1,19 @@
+uuid: 200ba00c-d23b-4caa-a826-34afee9be8bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.bp_photo
+id: paragraph.bp_photo.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: bp_photo
+label: Titulo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

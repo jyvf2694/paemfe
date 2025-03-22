@@ -1,0 +1,25 @@
+uuid: 1bc9d9cf-79ca-4925-bc5f-972d95bda266
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_3
+    - paragraphs.paragraphs_type.highlighted_cards
+id: paragraph.highlighted_cards.field_news_3
+field_name: field_news_3
+entity_type: paragraph
+bundle: highlighted_cards
+label: 'Noticia 3'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: news
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: c4d57260-bcc9-417b-be78-65948b627a70
+langcode: es
+status: true
+dependencies: {  }
+id: column
+label: Columna
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: cf042f7a-2725-478c-a50f-cc0e5c5a5294
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: alias_tipo_de_contenido_noticias
+label: 'Alias tipo de contenido noticias'
+type: 'canonical_entities:node'
+pattern: 'comunicacion/[node:content-type]/[node:title]'
+selection_criteria:
+  8f5cdd4c-b72c-4f9a-885b-6c0e98ec1984:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8f5cdd4c-b72c-4f9a-885b-6c0e98ec1984
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+weight: -5
+relationships: {  }

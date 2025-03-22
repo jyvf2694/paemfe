@@ -1,0 +1,14 @@
+uuid: 6e719c63-3c80-48db-852e-d37a389972b2
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.training_creator_and_approver
+  module:
+    - user
+id: user_add_role_action.training_creator_and_approver
+label: 'Añade el rol Training Creator and Approver al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: training_creator_and_approver

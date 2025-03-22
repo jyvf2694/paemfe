@@ -1,0 +1,15 @@
+uuid: 705a128d-20d9-41c2-bac7-4d8ac82e8e39
+langcode: es
+status: true
+dependencies: {  }
+name: card_xs
+label: 'Card XS'
+effects:
+  30444b32-a18a-437c-ada5-d080aa764565:
+    uuid: 30444b32-a18a-437c-ada5-d080aa764565
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 368
+      height: 207
+      anchor: center-center

@@ -1,0 +1,21 @@
+uuid: 48df8836-ddc0-441e-b377-7a7b0eb0edbc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lead
+    - node.type.called
+  module:
+    - text
+id: node.called.field_lead
+field_name: field_lead
+entity_type: node
+bundle: called
+label: Resumen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,55 @@
+uuid: f8d2784b-4ee3-47d0-bb7f-eac016e026cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.agenda.body
+    - field.field.node.agenda.field_end_date
+    - field.field.node.agenda.field_image
+    - field.field.node.agenda.field_start_date
+    - node.type.agenda
+  module:
+    - datetime
+    - smart_trim
+    - user
+id: node.agenda.teaser
+targetEntityType: node
+bundle: agenda
+mode: teaser
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 300
+      trim_type: chars
+      trim_suffix: ...
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      more_aria_label: 'Read more about [node:title]'
+      summary_handler: full
+      trim_options:
+        text: false
+        trim_zero: false
+        replace_tokens: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_start_date:
+    type: datetime_custom
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: d-M
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_end_date: true
+  field_image: true
+  langcode: true
+  links: true

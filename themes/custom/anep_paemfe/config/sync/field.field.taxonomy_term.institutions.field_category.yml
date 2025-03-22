@@ -1,0 +1,21 @@
+uuid: 1637c9ab-3862-4587-9067-4a0c35541c0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_category
+    - taxonomy.vocabulary.institutions
+  module:
+    - options
+id: taxonomy_term.institutions.field_category
+field_name: field_category
+entity_type: taxonomy_term
+bundle: institutions
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

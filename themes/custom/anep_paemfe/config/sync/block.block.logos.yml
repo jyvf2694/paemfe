@@ -1,0 +1,25 @@
+uuid: 5296099b-abfc-4659-ad7f-55a02fa88c6d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c9568444-307a-40f4-ac71-9f8d592ce472'
+  module:
+    - block_content
+  theme:
+    - dges
+id: logos
+theme: dges
+region: featured_bottom_third
+weight: 0
+provider: null
+plugin: 'block_content:c9568444-307a-40f4-ac71-9f8d592ce472'
+settings:
+  id: 'block_content:c9568444-307a-40f4-ac71-9f8d592ce472'
+  label: Logos
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

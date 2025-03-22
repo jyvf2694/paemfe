@@ -1,0 +1,20 @@
+uuid: 3dbd4b06-8e78-40e1-9f13-e7e970699b2e
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
+name: Artículo
+type: article
+description: 'Use este tipo de contenido para crear los contenidos de <em>Artículo</em>.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

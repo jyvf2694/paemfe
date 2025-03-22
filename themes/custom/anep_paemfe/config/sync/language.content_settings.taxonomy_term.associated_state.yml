@@ -1,0 +1,11 @@
+uuid: d76958a4-c6c2-4f52-abac-23a47431e271
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.associated_state
+id: taxonomy_term.associated_state
+target_entity_type_id: taxonomy_term
+target_bundle: associated_state
+default_langcode: site_default
+language_alterable: false

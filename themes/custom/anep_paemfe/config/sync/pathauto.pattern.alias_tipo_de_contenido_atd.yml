@@ -1,0 +1,22 @@
+uuid: c2de7427-1924-487b-b2a6-382fc71fc5f9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: alias_tipo_de_contenido_atd
+label: 'Alias tipo de contenido atd'
+type: 'canonical_entities:node'
+pattern: 'comunicacion/[node:content-type]/[node:title]'
+selection_criteria:
+  378ad2da-9d17-4819-a321-de15bd5dfff5:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 378ad2da-9d17-4819-a321-de15bd5dfff5
+    context_mapping:
+      node: node
+    bundles:
+      atd: atd
+selection_logic: and
+weight: -5
+relationships: {  }

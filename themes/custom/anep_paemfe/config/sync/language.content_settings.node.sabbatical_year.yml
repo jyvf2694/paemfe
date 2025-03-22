@@ -1,0 +1,11 @@
+uuid: 1de25e5b-5db9-4b5d-87cc-234d50862e96
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.sabbatical_year
+id: node.sabbatical_year
+target_entity_type_id: node
+target_bundle: sabbatical_year
+default_langcode: site_default
+language_alterable: false

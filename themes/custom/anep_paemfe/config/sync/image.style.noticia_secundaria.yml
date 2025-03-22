@@ -1,0 +1,15 @@
+uuid: 75ac827a-b7ac-4acf-9027-80d9e30d5174
+langcode: es
+status: true
+dependencies: {  }
+name: noticia_secundaria
+label: 'Noticia secundaria'
+effects:
+  8147148e-26f8-4a08-9a06-4d356b698d34:
+    uuid: 8147148e-26f8-4a08-9a06-4d356b698d34
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 415
+      height: 219
+      anchor: center-center

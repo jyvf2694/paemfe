@@ -1,0 +1,312 @@
+uuid: 1f2574bd-9a44-4f13-8157-41a18215934c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contact.field_department
+    - field.field.node.contact.field_direction
+    - field.field.node.contact.field_email
+    - field.field.node.contact.field_link
+    - field.field.node.contact.field_name
+    - field.field.node.contact.field_name_inspector
+    - field.field.node.contact.field_phone
+    - field.field.node.contact.field_schedule
+    - field.field.node.contact.field_subject
+    - field.field.node.contact.field_team
+    - field.field.node.contact.field_turns
+    - field.field.node.contact.field_type
+    - node.type.contact
+  module:
+    - conditional_fields
+    - link
+    - path
+id: node.contact.default
+targetEntityType: node
+bundle: contact
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_department:
+    type: options_select
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        47b597fb-7aa1-4511-a0d8-ff104fa034d9:
+          entity_type: node
+          bundle: contact
+          dependee: field_type
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: '101'
+            value_form:
+              -
+                target_id: '101'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_direction:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields: {  }
+  field_email:
+    type: email_default
+    weight: 13
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings:
+      conditional_fields: {  }
+  field_link:
+    type: link_default
+    weight: 17
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        1aa70fc6-f480-4fe7-9f77-0723fd74afb8:
+          entity_type: node
+          bundle: contact
+          dependee: field_type
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: '101'
+            value_form:
+              -
+                target_id: '101'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_name:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields: {  }
+  field_name_inspector:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        a9a7bfbb-da99-4796-b8f1-1e6b072ed508:
+          entity_type: node
+          bundle: contact
+          dependee: field_type
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: "106\r\n40"
+            value_form:
+              -
+                target_id: '40'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_phone:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields: {  }
+  field_schedule:
+    type: string_textfield
+    weight: 16
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        20939915-ff79-411b-a2aa-f2e374494639:
+          entity_type: node
+          bundle: contact
+          dependee: field_type
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: '102'
+            value_form:
+              -
+                target_id: '101'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_subject:
+    type: options_select
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        7d298b70-370b-4182-bcdb-e612c9283723:
+          entity_type: node
+          bundle: contact
+          dependee: field_type
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: '102'
+            value_form:
+              -
+                target_id: '101'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_team:
+    type: string_textfield
+    weight: 15
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        94fb8a09-93e2-43f7-9116-544a57dd2e87:
+          entity_type: node
+          bundle: contact
+          dependee: field_type
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: '102'
+            value_form:
+              -
+                target_id: '101'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_turns:
+    type: options_select
+    weight: 19
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        c73fead6-e03b-441d-9ed5-1a7f65abda3a:
+          entity_type: node
+          bundle: contact
+          dependee: field_type
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: '101'
+            value_form:
+              -
+                target_id: '101'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_type:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

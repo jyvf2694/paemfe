@@ -1,0 +1,15 @@
+uuid: f724f3d5-5e1a-4d94-83da-f0dab7b03a5a
+langcode: es
+status: true
+dependencies: {  }
+name: card_md
+label: 'Card MD'
+effects:
+  10fb4583-238c-4df4-9129-43f39cd618ef:
+    uuid: 10fb4583-238c-4df4-9129-43f39cd618ef
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 736
+      height: 414
+      anchor: center-center

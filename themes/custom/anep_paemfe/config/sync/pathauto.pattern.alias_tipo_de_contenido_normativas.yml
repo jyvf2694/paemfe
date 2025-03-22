@@ -1,0 +1,22 @@
+uuid: a54e60d0-f753-4d62-8dad-1e879231368b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: alias_tipo_de_contenido_normativas
+label: 'Alias tipo de contenido normativas'
+type: 'canonical_entities:node'
+pattern: 'normativas/[node:title]'
+selection_criteria:
+  a5d59978-b5db-4d82-bce3-c9a7df9828c0:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a5d59978-b5db-4d82-bce3-c9a7df9828c0
+    context_mapping:
+      node: node
+    bundles:
+      regulations_resolutions: regulations_resolutions
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,30 @@
+uuid: 69a5b4a5-a3a4-4df9-b47b-e5b9c0968b10
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:081ade45-8fa4-48bb-9da8-a028a5e9d952'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: sidebarnormativas
+theme: dges
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'block_content:081ade45-8fa4-48bb-9da8-a028a5e9d952'
+settings:
+  id: 'block_content:081ade45-8fa4-48bb-9da8-a028a5e9d952'
+  label: 'Sidebar Normativas'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /normativa-general

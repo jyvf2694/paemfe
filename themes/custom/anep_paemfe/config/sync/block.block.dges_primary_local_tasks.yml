@@ -1,0 +1,22 @@
+uuid: af4ea837-11d2-4518-9d2b-60a4f7d62e67
+langcode: es
+status: true
+dependencies:
+  theme:
+    - dges
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: dges_primary_local_tasks
+theme: dges
+region: highlighted
+weight: -13
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas principales'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

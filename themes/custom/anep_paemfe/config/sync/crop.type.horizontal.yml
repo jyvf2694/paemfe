@@ -1,0 +1,12 @@
+uuid: bdb921cc-5145-4f72-95ca-09c8b82a7e12
+langcode: es
+status: true
+dependencies: {  }
+label: Horizontal
+id: horizontal
+description: ''
+aspect_ratio: '16:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

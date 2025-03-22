@@ -1,0 +1,23 @@
+uuid: 8948513b-78a6-4300-995e-c2f488931d1a
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - anep
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: anep_search_form_wide
+theme: anep
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda (ancho)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

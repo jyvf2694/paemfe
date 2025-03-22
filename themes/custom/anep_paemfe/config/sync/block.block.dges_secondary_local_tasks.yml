@@ -1,0 +1,22 @@
+uuid: 48c2b5c2-b217-4da5-808b-0ffb926f1ba2
+langcode: es
+status: true
+dependencies:
+  theme:
+    - dges
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: dges_secondary_local_tasks
+theme: dges
+region: highlighted
+weight: -12
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas secundarias'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

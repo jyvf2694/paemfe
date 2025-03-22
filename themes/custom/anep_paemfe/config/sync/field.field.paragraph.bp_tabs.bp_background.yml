@@ -1,0 +1,23 @@
+uuid: a4893918-e4ea-424d-bf7f-5be8395b7c33
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.bp_tabs
+  module:
+    - options
+_core:
+  default_config_hash: rKel_HSXubRSbukrJnGanL-foVKMM8PqZg1ucRLP2VE
+id: paragraph.bp_tabs.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: bp_tabs
+label: Fondo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

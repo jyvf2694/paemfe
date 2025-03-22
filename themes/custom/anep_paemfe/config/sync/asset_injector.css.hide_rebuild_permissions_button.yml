@@ -1,0 +1,15 @@
+uuid: 0b920a29-f7a9-40d0-af3a-3f1011cdc6fc
+langcode: es
+status: true
+dependencies: {  }
+id: hide_rebuild_permissions_button
+label: 'Hide rebuild permissions button'
+code: |-
+  .messages .messages__content a[href='/admin/reports/status/rebuild'] {
+  	display: none;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

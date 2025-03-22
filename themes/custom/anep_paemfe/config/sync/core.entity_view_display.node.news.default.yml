@@ -1,0 +1,78 @@
+uuid: 2a970b7c-ad4e-4728-a2bd-984836352e49
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.news.body
+    - field.field.node.news.field_file_media
+    - field.field.node.news.field_image
+    - field.field.node.news.field_lead
+    - field.field.node.news.field_public
+    - field.field.node.news.field_subtype
+    - field.field.node.news.field_theme
+    - field.field.node.news.field_video_media
+    - image.style.full_content_16x9
+    - node.type.news
+  module:
+    - svg_image
+    - text
+    - user
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_file_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: full_content_16x9
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: false
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_lead:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_video_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_public: true
+  field_subtype: true
+  field_theme: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

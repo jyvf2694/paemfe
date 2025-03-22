@@ -1,0 +1,41 @@
+global-styling:
+  version: VERSION
+  js:
+    js/anep_paemfe_paemfe.js: {}
+  css:
+    component:
+      css/anep_paemfe_paemfe.css: {}
+
+  dependencies:
+    - core/once
+slick:
+  remote: http://kenwheeler.github.io/slick/
+  version: 1.x
+  license:
+    name: MIT
+    url: https://github.com/kenwheeler/slick/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/slick/slick/slick.min.js: { minified: true }
+  css:
+    base:
+      /libraries/slick/slick/slick.css: {}
+    component:
+      /libraries/slick/slick/slick-theme.css: {}
+  dependencies:
+    - core/jquery
+
+lightbox:
+  remote: https://github.com/lokesh/lightbox2/releases
+  version: 2.x
+  license:
+    name: MIT
+    url: https://github.com/lokesh/lightbox2/blob/dev/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/lightbox/src/js/lightbox.js: { minified: true }
+  css:
+    base:
+      /libraries/lightbox/src/css/lightbox.css: {}
+  dependencies:
+    - core/jquery

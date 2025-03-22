@@ -1,0 +1,15 @@
+uuid: ae398442-ac1e-49a6-a5d1-c70e67a37533
+langcode: es
+status: true
+dependencies: {  }
+name: card_xl
+label: 'Card XL'
+effects:
+  6595ac86-5cfb-408b-9d6a-74484b621eb2:
+    uuid: 6595ac86-5cfb-408b-9d6a-74484b621eb2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 338
+      height: 225
+      anchor: center-center

@@ -1,0 +1,21 @@
+uuid: 2eac67a3-14e9-4011-9e41-382c10f01cdd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lead
+    - node.type.sabbatical_year
+  module:
+    - text
+id: node.sabbatical_year.field_lead
+field_name: field_lead
+entity_type: node
+bundle: sabbatical_year
+label: Resumen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

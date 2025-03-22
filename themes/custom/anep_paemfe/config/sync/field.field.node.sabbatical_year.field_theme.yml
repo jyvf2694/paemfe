@@ -1,0 +1,29 @@
+uuid: c250dde0-66be-431e-820f-d6d72f3a6d82
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_theme
+    - node.type.sabbatical_year
+    - taxonomy.vocabulary.theme
+id: node.sabbatical_year.field_theme
+field_name: field_theme
+entity_type: node
+bundle: sabbatical_year
+label: Tema
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      theme: theme
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

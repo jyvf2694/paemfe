@@ -1,0 +1,21 @@
+uuid: dd9b540c-40c9-4886-a8ef-b004baa3bf8d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_text
+    - paragraphs.paragraphs_type.image_with_text
+  module:
+    - text
+id: paragraph.image_with_text.bp_text
+field_name: bp_text
+entity_type: paragraph
+bundle: image_with_text
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,30 @@
+uuid: ce5b9bd4-580d-4082-b2ec-b001079613fd
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b4458598-f982-48b8-b80d-e4b9e4378100'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: cuadriculadetitulos
+theme: dges
+region: featured_top
+weight: -14
+provider: null
+plugin: 'block_content:b4458598-f982-48b8-b80d-e4b9e4378100'
+settings:
+  id: 'block_content:b4458598-f982-48b8-b80d-e4b9e4378100'
+  label: 'cuadricula de títulos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

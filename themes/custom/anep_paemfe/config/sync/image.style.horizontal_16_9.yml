@@ -1,0 +1,15 @@
+uuid: e25996ff-dc0c-40e9-8d0e-b1fa03f2305f
+langcode: es
+status: true
+dependencies: {  }
+name: horizontal_16_9
+label: 'Horizontal 16:9'
+effects:
+  76e0b46b-7e20-4161-8047-62022bed890c:
+    uuid: 76e0b46b-7e20-4161-8047-62022bed890c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1280
+      height: 720
+      anchor: center-center

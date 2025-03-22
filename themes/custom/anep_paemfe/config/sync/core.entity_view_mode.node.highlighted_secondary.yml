@@ -1,0 +1,10 @@
+uuid: 36f84548-3d23-491d-aa55-e73e2c7272e4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.highlighted_secondary
+label: 'Highlighted secondary'
+targetEntityType: node
+cache: true

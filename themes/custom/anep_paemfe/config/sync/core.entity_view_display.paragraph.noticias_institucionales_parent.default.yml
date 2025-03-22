@@ -1,0 +1,24 @@
+uuid: f5159722-8ad1-4599-9fd7-7d127e17cd4a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.noticias_institucionales_parent.field_component
+    - paragraphs.paragraphs_type.noticias_institucionales_parent
+  module:
+    - entity_reference_revisions
+id: paragraph.noticias_institucionales_parent.default
+targetEntityType: paragraph
+bundle: noticias_institucionales_parent
+mode: default
+content:
+  field_component:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

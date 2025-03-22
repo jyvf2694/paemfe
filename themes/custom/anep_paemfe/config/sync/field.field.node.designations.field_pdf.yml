@@ -1,0 +1,27 @@
+uuid: ae5035fd-b7dd-48e6-ab57-4f1588315a0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pdf
+    - node.type.designations
+  module:
+    - file
+id: node.designations.field_pdf
+field_name: field_pdf
+entity_type: node
+bundle: designations
+label: Vacantes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages zip'
+  max_filesize: 20MB
+  description_field: false
+field_type: file

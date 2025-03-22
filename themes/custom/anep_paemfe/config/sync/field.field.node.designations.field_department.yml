@@ -1,0 +1,29 @@
+uuid: 45b524b2-c89f-4c89-b07e-db7d96c83cce
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_department
+    - node.type.designations
+    - taxonomy.vocabulary.department
+id: node.designations.field_department
+field_name: field_department
+entity_type: node
+bundle: designations
+label: Departamento
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      department: department
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

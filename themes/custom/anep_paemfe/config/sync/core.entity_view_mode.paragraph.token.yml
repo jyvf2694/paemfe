@@ -1,0 +1,10 @@
+uuid: 87ad73b1-b2bb-49db-b524-82e2083abba3
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.token
+label: Token
+targetEntityType: paragraph
+cache: true

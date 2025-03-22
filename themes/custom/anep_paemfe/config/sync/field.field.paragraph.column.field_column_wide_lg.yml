@@ -1,0 +1,23 @@
+uuid: f899db15-38e7-4c7b-ba48-3c026f76391f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_wide_lg
+    - paragraphs.paragraphs_type.column
+  module:
+    - options
+id: paragraph.column.field_column_wide_lg
+field_name: field_column_wide_lg
+entity_type: paragraph
+bundle: column
+label: Ancho
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '12'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

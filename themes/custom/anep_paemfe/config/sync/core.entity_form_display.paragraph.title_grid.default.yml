@@ -1,0 +1,25 @@
+uuid: c9d4d54c-d5ce-4ebb-85e8-fd5be36b826d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_grid.field_link_limit
+    - paragraphs.paragraphs_type.title_grid
+  module:
+    - link
+id: paragraph.title_grid.default
+targetEntityType: paragraph
+bundle: title_grid
+mode: default
+content:
+  field_link_limit:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

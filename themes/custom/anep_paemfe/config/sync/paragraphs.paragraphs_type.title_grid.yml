@@ -1,0 +1,10 @@
+uuid: 089a371f-583a-48ba-bad5-1939cf8e31d7
+langcode: es
+status: true
+dependencies: {  }
+id: title_grid
+label: 'Cuadrícula de Títulos'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

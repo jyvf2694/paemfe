@@ -1,0 +1,15 @@
+uuid: 515cbb50-933a-43f4-92c4-be5416116aeb
+langcode: es
+status: true
+dependencies: {  }
+name: noticia_principal
+label: 'Noticia principal'
+effects:
+  20c04401-8329-49cc-8403-94dda368b335:
+    uuid: 20c04401-8329-49cc-8403-94dda368b335
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 830
+      height: 468
+      anchor: center-center

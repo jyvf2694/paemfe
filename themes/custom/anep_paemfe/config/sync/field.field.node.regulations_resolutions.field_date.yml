@@ -1,0 +1,21 @@
+uuid: d0c97e61-7f9f-4d13-ac1a-732856b1785b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.regulations_resolutions
+  module:
+    - datetime
+id: node.regulations_resolutions.field_date
+field_name: field_date
+entity_type: node
+bundle: regulations_resolutions
+label: Fecha
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

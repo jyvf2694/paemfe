@@ -1,0 +1,15 @@
+uuid: aa7f4a0f-73b1-4deb-bc99-40c8b0b1c26c
+langcode: es
+status: true
+dependencies: {  }
+name: vertical_3_4
+label: 'Vertical 3:4'
+effects:
+  84e15e56-3bb4-42ba-a812-42bac646bc7b:
+    uuid: 84e15e56-3bb4-42ba-a812-42bac646bc7b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 540
+      height: 720
+      anchor: center-center

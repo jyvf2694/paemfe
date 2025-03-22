@@ -1,0 +1,19 @@
+uuid: 2bf7dd13-aa22-4b86-8a8c-6a08621d196e
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_link_limit
+field_name: field_link_limit
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

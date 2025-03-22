@@ -1,0 +1,49 @@
+uuid: 2cd19160-c878-45a9-8029-54c1fe59b553
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_media
+    - field.field.node.news.body
+    - field.field.node.news.field_file_media
+    - field.field.node.news.field_image
+    - field.field.node.news.field_lead
+    - field.field.node.news.field_public
+    - field.field.node.news.field_subtype
+    - field.field.node.news.field_theme
+    - field.field.node.news.field_video_media
+    - image.style.card_md_3_2
+    - node.type.news
+  module:
+    - svg_image
+    - user
+id: node.news.card_media
+targetEntityType: node
+bundle: news
+mode: card_media
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: card_md_3_2
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: false
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_file_media: true
+  field_lead: true
+  field_public: true
+  field_subtype: true
+  field_theme: true
+  field_video_media: true
+  langcode: true
+  links: true

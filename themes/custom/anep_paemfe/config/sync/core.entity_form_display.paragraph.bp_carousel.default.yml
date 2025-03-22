@@ -1,0 +1,52 @@
+uuid: a3dc516e-dbed-4b3d-8589-f6ee27cbc9db
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_carousel.bp_background
+    - field.field.paragraph.bp_carousel.bp_slide_content
+    - field.field.paragraph.bp_carousel.bp_slide_interval
+    - field.field.paragraph.bp_carousel.bp_width
+    - paragraphs.paragraphs_type.bp_carousel
+  module:
+    - paragraphs
+_core:
+  default_config_hash: VM2-v4lCqhNA7pfcql-iEyt7O9WwxXkSgTd8cvTR51o
+id: paragraph.bp_carousel.default
+targetEntityType: paragraph
+bundle: bp_carousel
+mode: default
+content:
+  bp_background:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  bp_slide_content:
+    type: entity_reference_paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+  bp_slide_interval:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  bp_width:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

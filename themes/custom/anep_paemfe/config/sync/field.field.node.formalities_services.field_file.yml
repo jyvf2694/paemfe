@@ -1,0 +1,27 @@
+uuid: 704aa7b7-0625-4c54-aa89-e00a84d44aae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.formalities_services
+  module:
+    - file
+id: node.formalities_services.field_file
+field_name: field_file
+entity_type: node
+bundle: formalities_services
+label: Archivo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages zip'
+  max_filesize: 20MB
+  description_field: true
+field_type: file

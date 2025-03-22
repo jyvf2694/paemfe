@@ -1,0 +1,14 @@
+uuid: 6791b367-f21f-46a4-b8bf-5e6d58f70c77
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regulations_maker
+  module:
+    - user
+id: user_remove_role_action.regulations_maker
+label: 'Elimina el rol Regulations Maker al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: regulations_maker

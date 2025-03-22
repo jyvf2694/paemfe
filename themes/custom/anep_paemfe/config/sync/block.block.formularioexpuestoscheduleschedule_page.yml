@@ -1,0 +1,28 @@
+uuid: 4c582609-0721-40da-bc57-190164c27999
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.schedule
+  module:
+    - system
+    - views
+  theme:
+    - dges
+id: formularioexpuestoscheduleschedule_page
+theme: dges
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'views_exposed_filter_block:schedule-schedule_page'
+settings:
+  id: 'views_exposed_filter_block:schedule-schedule_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /comunicacion/agenda

@@ -1,0 +1,22 @@
+uuid: 0e2b8e1c-c241-411a-90c4-8bf9d916d292
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - anep
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: anep_messages
+theme: anep
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

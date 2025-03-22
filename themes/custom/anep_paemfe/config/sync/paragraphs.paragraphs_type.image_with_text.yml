@@ -1,0 +1,14 @@
+uuid: 728d9456-3b60-4995-9684-482f39686301
+langcode: es
+status: true
+dependencies:
+  module:
+    - dges_utils
+id: image_with_text
+label: 'Imagen con Texto'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  my_paragraph_text_color:
+    enabled: true

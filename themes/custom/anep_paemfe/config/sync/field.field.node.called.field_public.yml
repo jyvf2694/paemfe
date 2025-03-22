@@ -1,0 +1,29 @@
+uuid: 0e6d9433-8a8c-47b4-85d7-3da99c05b5ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public
+    - node.type.called
+    - taxonomy.vocabulary.public
+id: node.called.field_public
+field_name: field_public
+entity_type: node
+bundle: called
+label: Público
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      public: public
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: a38000bc-36d4-4452-b7d3-ae57c316aa85
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Noticias
+type: news
+description: 'Use este tipo de contenido para crear los contenidos de <em>Noticias</em>.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

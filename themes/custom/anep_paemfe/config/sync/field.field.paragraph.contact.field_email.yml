@@ -1,0 +1,19 @@
+uuid: f9c0b253-3136-4961-88b1-6fbd8750a8b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_email
+    - paragraphs.paragraphs_type.contact
+id: paragraph.contact.field_email
+field_name: field_email
+entity_type: paragraph
+bundle: contact
+label: 'Correo electrónico'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

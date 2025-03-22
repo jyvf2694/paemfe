@@ -1,0 +1,41 @@
+uuid: e103784d-1f03-4429-bc58-4efedcdc29d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.compact
+    - field.field.paragraph.contact.field_address
+    - field.field.paragraph.contact.field_email
+    - field.field.paragraph.contact.field_phone
+    - field.field.paragraph.contact.field_title
+    - paragraphs.paragraphs_type.contact
+id: paragraph.contact.compact
+targetEntityType: paragraph
+bundle: contact
+mode: compact
+content:
+  field_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_email:
+    type: email_mailto
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_phone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_title: true

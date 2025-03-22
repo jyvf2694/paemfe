@@ -1,0 +1,24 @@
+uuid: db0a59e2-a018-438a-bc37-ff17d3f4dc8d
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dges
+id: pagetitle
+theme: dges
+region: content
+weight: -15
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

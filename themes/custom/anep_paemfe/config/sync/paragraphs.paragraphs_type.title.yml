@@ -1,0 +1,10 @@
+uuid: 265f8162-8c0f-48f9-92c7-e27479431945
+langcode: es
+status: true
+dependencies: {  }
+id: title
+label: Título
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

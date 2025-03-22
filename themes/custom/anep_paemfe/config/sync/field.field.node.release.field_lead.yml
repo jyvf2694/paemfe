@@ -1,0 +1,21 @@
+uuid: 965284ea-4145-4b36-a2a3-abdbd1a3c3f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lead
+    - node.type.release
+  module:
+    - text
+id: node.release.field_lead
+field_name: field_lead
+entity_type: node
+bundle: release
+label: Resumen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,118 @@
+uuid: 11376ec4-eb38-426a-9119-87fa1a1d314f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_component
+    - paragraphs.paragraphs_type.institutional_news
+    - paragraphs.paragraphs_type.noticias_institucionales_parent
+  module:
+    - entity_reference_revisions
+id: paragraph.noticias_institucionales_parent.field_component
+field_name: field_component
+entity_type: paragraph
+bundle: noticias_institucionales_parent
+label: Item
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      institutional_news: institutional_news
+    negate: 0
+    target_bundles_drag_drop:
+      bp_accordion:
+        weight: 31
+        enabled: false
+      bp_accordion_section:
+        weight: 32
+        enabled: false
+      bp_blank:
+        weight: 33
+        enabled: false
+      bp_block:
+        weight: 34
+        enabled: false
+      bp_carousel:
+        weight: 35
+        enabled: false
+      bp_column_wrapper:
+        weight: 39
+        enabled: false
+      bp_columns:
+        weight: 36
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 37
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 38
+        enabled: false
+      bp_image:
+        weight: 40
+        enabled: false
+      bp_modal:
+        weight: 41
+        enabled: false
+      bp_photo:
+        weight: 42
+        enabled: false
+      bp_simple:
+        weight: 43
+        enabled: false
+      bp_tab_section:
+        weight: 45
+        enabled: false
+      bp_tabs:
+        weight: 44
+        enabled: false
+      bp_view:
+        weight: 46
+        enabled: false
+      community_news:
+        weight: 47
+        enabled: false
+      contact:
+        weight: 48
+        enabled: false
+      contests_files:
+        weight: 49
+        enabled: false
+      highlighted_cards:
+        weight: 50
+        enabled: false
+      image_videos:
+        weight: 51
+        enabled: false
+      image_with_text:
+        weight: 52
+        enabled: false
+      institutional_news:
+        weight: 53
+        enabled: true
+      link_list:
+        weight: 54
+        enabled: false
+      link_list_item:
+        weight: 55
+        enabled: false
+      list_of_links:
+        weight: 56
+        enabled: false
+      noticias_institucionales_parent:
+        weight: 57
+        enabled: false
+      title:
+        weight: 58
+        enabled: false
+      title_grid:
+        weight: 59
+        enabled: false
+      videos:
+        weight: 60
+        enabled: false
+field_type: entity_reference_revisions

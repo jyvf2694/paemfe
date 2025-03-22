@@ -1,0 +1,57 @@
+uuid: c6063928-0f7a-4852-a85c-6f8553ecb8ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.scholarships_and_agreements.body
+    - field.field.node.scholarships_and_agreements.field_file
+    - field.field.node.scholarships_and_agreements.field_lead
+    - field.field.node.scholarships_and_agreements.field_link
+    - node.type.scholarships_and_agreements
+  module:
+    - file
+    - link
+    - text
+    - user
+id: node.scholarships_and_agreements.default
+targetEntityType: node
+bundle: scholarships_and_agreements
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_lead:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true

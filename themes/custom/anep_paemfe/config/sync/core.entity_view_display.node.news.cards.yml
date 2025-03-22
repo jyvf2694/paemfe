@@ -1,0 +1,54 @@
+uuid: 4b826cf8-6743-4d2c-9156-c2a7eadf8559
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.cards
+    - field.field.node.news.body
+    - field.field.node.news.field_file_media
+    - field.field.node.news.field_image
+    - field.field.node.news.field_lead
+    - field.field.node.news.field_public
+    - field.field.node.news.field_subtype
+    - field.field.node.news.field_theme
+    - field.field.node.news.field_video_media
+    - node.type.news
+  module:
+    - smart_trim
+    - user
+id: node.news.cards
+targetEntityType: node
+bundle: news
+mode: cards
+content:
+  field_lead:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ...
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      more_aria_label: 'Read more about [node:title]'
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+        replace_tokens: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_file_media: true
+  field_image: true
+  field_public: true
+  field_subtype: true
+  field_theme: true
+  field_video_media: true
+  langcode: true
+  links: true

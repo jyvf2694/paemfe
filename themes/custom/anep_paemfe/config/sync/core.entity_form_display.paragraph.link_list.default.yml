@@ -1,0 +1,35 @@
+uuid: b30aa1dc-8b12-41ed-9671-36cd1f05497d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_list.field_components
+    - paragraphs.paragraphs_type.link_list
+  module:
+    - paragraphs
+id: paragraph.link_list.default
+targetEntityType: paragraph
+bundle: link_list
+mode: default
+content:
+  field_components:
+    type: paragraphs
+    weight: 2
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

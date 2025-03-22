@@ -1,0 +1,19 @@
+uuid: 680a3c0b-738c-448a-9d89-a419f1c9f4f7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_header
+    - paragraphs.paragraphs_type.flip_cards
+id: paragraph.flip_cards.bp_header
+field_name: bp_header
+entity_type: paragraph
+bundle: flip_cards
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

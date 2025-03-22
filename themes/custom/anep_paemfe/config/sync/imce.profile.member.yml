@@ -1,0 +1,29 @@
+uuid: 1556cc5a-cc50-4cff-a50f-017c89a2a966
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pRtugufdcuY7Mt1qFFUc2exdM7_YyYmpv_GNbYN31lA
+id: member
+label: 'Member profile'
+description: 'Configuration for site members'
+conf:
+  usertab: false
+  extensions: 'txt, rtf, doc, docx, ppt, pptx, xls, xlsx, pdf, odf, odg, odp, ods, odt, fodt, fods, fodp, fodg, key, numbers, pages'
+  maxsize: !!float 20
+  quota: null
+  maxwidth: null
+  maxheight: null
+  replace: 0
+  thumbnail_style: ''
+  thumbnail_grid_style: false
+  ignore_usage: false
+  url_alter: false
+  folders:
+    -
+      path: .
+      permissions:
+        browse_files: true
+        browse_subfolders: true
+        create_subfolders: true
+        upload_files: true

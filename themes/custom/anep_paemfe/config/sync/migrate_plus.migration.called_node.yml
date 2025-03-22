@@ -1,0 +1,42 @@
+uuid: 9ade97be-310e-41a0-b188-79dbdd74aa55
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - dges_migration
+_core:
+  default_config_hash: 15Ow5a3FK7N-8Ex08LKwaKNICkNsKUoQGP-uXug2IOU
+id: called_node
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: dges
+label: 'Migrate the called content types'
+source:
+  plugin: called_node
+  node_type: called
+process:
+  type:
+    plugin: default_value
+    default_value: called
+  title: title
+  status:
+    plugin: default_value
+    default_value: 1
+  body/value: fulltext
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  uid: uid
+  field_lead/value: introtext
+  field_lead/format:
+    plugin: default_value
+    default_value: basic_html
+  created: created
+  changed: changed
+  field_associated_state: state
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null

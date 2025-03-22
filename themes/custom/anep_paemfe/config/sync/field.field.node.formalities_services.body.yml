@@ -1,0 +1,23 @@
+uuid: ecddc6ef-caa1-4af9-967f-d9f0b468b509
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.formalities_services
+  module:
+    - text
+id: node.formalities_services.body
+field_name: body
+entity_type: node
+bundle: formalities_services
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

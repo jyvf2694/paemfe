@@ -1,0 +1,33 @@
+
+{% if page.footer %}
+<footer >
+   {% if page.presentacion %}
+<div class="block-logosorganismos" role="complementary">
+    {{ page.presentacion }}
+</div>
+{% endif %} 
+
+   {% if page.sponsor %}
+   <div id="sponsor" class="sponsor" role="complementary">
+      <span>Apoyan:</span>
+      {{ page.sponsor }}
+   </div>
+   {% endif %}
+   <div class="footer-container">
+      <div class="footer">
+   <div class="footer-top">
+      <div class="left">
+       {{ page.footer }}       
+            
+         
+      </div>
+      <div class="right">
+         {{ page.menupie }}
+      </div>
+   </div>
+   <div class="footer-bottom">
+      
+   </div>
+</div>
+</footer>
+{% endif %}

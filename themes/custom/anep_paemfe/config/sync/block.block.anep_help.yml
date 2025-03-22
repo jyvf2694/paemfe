@@ -1,0 +1,22 @@
+uuid: 9a62b75e-3f9d-432f-b018-d48695120b95
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - anep
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: anep_help
+theme: anep
+region: top_header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

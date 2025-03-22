@@ -1,0 +1,23 @@
+uuid: f90e5f90-a463-4322-8628-695542493f30
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.bp_simple
+  module:
+    - options
+_core:
+  default_config_hash: Kwets595lMGLAPyuU5kPHZbLNCFQcKNGafYZyWG42w0
+id: paragraph.bp_simple.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: bp_simple
+label: Fondo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

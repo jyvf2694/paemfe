@@ -1,0 +1,14 @@
+uuid: f209ecf2-4b30-46d1-8f23-b16db1e2f2c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.call_approver
+  module:
+    - user
+id: user_add_role_action.call_approver
+label: 'Añade el rol Call approver al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: call_approver

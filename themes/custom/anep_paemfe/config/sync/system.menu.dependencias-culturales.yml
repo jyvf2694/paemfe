@@ -1,0 +1,8 @@
+uuid: 4aff2cb4-c5af-4f7e-be26-6832e4c0044c
+langcode: es
+status: true
+dependencies: {  }
+id: dependencias-culturales
+label: 'Dependencias culturales'
+description: ''
+locked: false

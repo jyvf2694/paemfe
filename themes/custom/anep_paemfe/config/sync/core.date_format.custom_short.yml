@@ -1,0 +1,8 @@
+uuid: bc38f27e-65da-4e38-b3b0-f3e136b678d7
+langcode: es
+status: true
+dependencies: {  }
+id: custom_short
+label: 'Formato corto personalizado'
+locked: false
+pattern: d/m/Y

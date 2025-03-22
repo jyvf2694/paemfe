@@ -1,0 +1,21 @@
+uuid: 5d73fa22-2a27-447f-9d2e-f399b2b05e3b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lead
+    - node.type.scholarships_and_agreements
+  module:
+    - text
+id: node.scholarships_and_agreements.field_lead
+field_name: field_lead
+entity_type: node
+bundle: scholarships_and_agreements
+label: Resumen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

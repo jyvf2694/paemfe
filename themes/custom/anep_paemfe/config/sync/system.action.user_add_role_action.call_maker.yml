@@ -1,0 +1,14 @@
+uuid: 6e52a703-02db-48f6-ac2f-0a7c95bf772a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.call_maker
+  module:
+    - user
+id: user_add_role_action.call_maker
+label: 'Añade el rol Call maker al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: call_maker

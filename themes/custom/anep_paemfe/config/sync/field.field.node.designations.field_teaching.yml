@@ -1,0 +1,29 @@
+uuid: 3d079b36-ff52-4bde-84f3-da7be074b195
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaching
+    - node.type.designations
+    - taxonomy.vocabulary.teaching
+id: node.designations.field_teaching
+field_name: field_teaching
+entity_type: node
+bundle: designations
+label: Docencia
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      teaching: teaching
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

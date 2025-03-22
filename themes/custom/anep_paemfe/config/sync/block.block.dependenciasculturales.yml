@@ -1,0 +1,25 @@
+uuid: b66f7e23-908f-494e-ae18-dd053a9c5fb6
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.dependencias-culturales
+  module:
+    - system
+  theme:
+    - dges
+id: dependenciasculturales
+theme: dges
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:dependencias-culturales'
+settings:
+  id: 'system_menu_block:dependencias-culturales'
+  label: 'Dependencias culturales'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

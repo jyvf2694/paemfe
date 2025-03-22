@@ -1,0 +1,29 @@
+uuid: 95d7aab5-ca75-4b27-bb79-678488e1848b
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.designations
+  module:
+    - filter
+    - node
+    - system
+    - toolbar
+    - tour
+    - view_unpublished
+id: designation_maker
+label: 'Creador de Designaciones'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'create designations content'
+  - 'use text format basic_html'
+  - 'view any unpublished designations content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

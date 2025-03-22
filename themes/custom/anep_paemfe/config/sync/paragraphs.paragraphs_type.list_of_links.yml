@@ -1,0 +1,10 @@
+uuid: fbce7dcb-b085-4694-9357-3d19e135a511
+langcode: es
+status: true
+dependencies: {  }
+id: list_of_links
+label: 'Listado de Links'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

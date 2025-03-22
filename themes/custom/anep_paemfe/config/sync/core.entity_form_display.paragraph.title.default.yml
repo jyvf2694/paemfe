@@ -1,0 +1,34 @@
+uuid: 7f2c716c-6f30-47b1-90ce-5426778ef094
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title.bp_link
+    - field.field.paragraph.title.field_title
+    - paragraphs.paragraphs_type.title
+  module:
+    - link
+id: paragraph.title.default
+targetEntityType: paragraph
+bundle: title
+mode: default
+content:
+  bp_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

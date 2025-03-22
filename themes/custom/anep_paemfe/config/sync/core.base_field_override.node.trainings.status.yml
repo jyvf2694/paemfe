@@ -1,0 +1,22 @@
+uuid: 38d25a04-18f6-4956-813e-37b2bd0a0b54
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trainings
+id: node.trainings.status
+field_name: status
+entity_type: node
+bundle: trainings
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

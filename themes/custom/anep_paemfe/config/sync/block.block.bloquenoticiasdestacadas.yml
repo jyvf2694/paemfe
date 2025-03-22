@@ -1,0 +1,30 @@
+uuid: 8ec4275b-c336-4516-85ac-034439c6b2d3
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:28c3c308-8592-44bf-9d6e-839f84c564fa'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: bloquenoticiasdestacadas
+theme: dges
+region: featured_top
+weight: -15
+provider: null
+plugin: 'block_content:28c3c308-8592-44bf-9d6e-839f84c564fa'
+settings:
+  id: 'block_content:28c3c308-8592-44bf-9d6e-839f84c564fa'
+  label: 'Bloque noticias destacadas '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/60350

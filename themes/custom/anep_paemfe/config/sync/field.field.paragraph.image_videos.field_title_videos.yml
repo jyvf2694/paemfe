@@ -1,0 +1,109 @@
+uuid: a755274a-d5b3-4c62-b43f-41b433b15c12
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_videos
+    - paragraphs.paragraphs_type.image_videos
+    - paragraphs.paragraphs_type.title
+  module:
+    - entity_reference_revisions
+id: paragraph.image_videos.field_title_videos
+field_name: field_title_videos
+entity_type: paragraph
+bundle: image_videos
+label: 'Titulo Videos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      title: title
+    negate: 0
+    target_bundles_drag_drop:
+      bp_accordion:
+        weight: 28
+        enabled: false
+      bp_accordion_section:
+        weight: 29
+        enabled: false
+      bp_blank:
+        weight: 30
+        enabled: false
+      bp_block:
+        weight: 31
+        enabled: false
+      bp_carousel:
+        weight: 32
+        enabled: false
+      bp_column_wrapper:
+        weight: 36
+        enabled: false
+      bp_columns:
+        weight: 33
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 34
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 35
+        enabled: false
+      bp_image:
+        weight: 37
+        enabled: false
+      bp_modal:
+        weight: 38
+        enabled: false
+      bp_simple:
+        weight: 39
+        enabled: false
+      bp_tab_section:
+        weight: 41
+        enabled: false
+      bp_tabs:
+        weight: 40
+        enabled: false
+      bp_view:
+        weight: 42
+        enabled: false
+      contact:
+        weight: 43
+        enabled: false
+      contests_files:
+        weight: 44
+        enabled: false
+      highlighted_cards:
+        weight: 45
+        enabled: false
+      image_videos:
+        weight: 46
+        enabled: false
+      image_with_text:
+        weight: 47
+        enabled: false
+      institutional_news:
+        weight: 48
+        enabled: false
+      link_list:
+        weight: 49
+        enabled: false
+      link_list_item:
+        weight: 50
+        enabled: false
+      list_of_links:
+        weight: 51
+        enabled: false
+      title:
+        weight: 52
+        enabled: true
+      title_grid:
+        weight: 53
+        enabled: false
+      videos:
+        weight: 54
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,15 @@
+uuid: 7ed8eea0-16b8-4fc5-9380-8e381c6d06a9
+langcode: es
+status: true
+dependencies: {  }
+name: card_sm
+label: 'Card SM'
+effects:
+  57798eb2-2881-4b60-bd0c-8f79b1eb988d:
+    uuid: 57798eb2-2881-4b60-bd0c-8f79b1eb988d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 543
+      height: 361
+      anchor: center-center

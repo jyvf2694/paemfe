@@ -1,0 +1,25 @@
+uuid: 146a39f7-ed17-42d8-b785-069a20e168f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_1
+    - paragraphs.paragraphs_type.community_news
+id: paragraph.community_news.field_news_1
+field_name: field_news_1
+entity_type: paragraph
+bundle: community_news
+label: Noticia
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: news
+      display_name: community_news_reference
+      arguments: {  }
+field_type: entity_reference

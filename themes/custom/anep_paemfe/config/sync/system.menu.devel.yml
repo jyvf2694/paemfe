@@ -1,0 +1,13 @@
+uuid: defe4d94-4c1e-4009-b52f-b87133a45624
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - devel
+_core:
+  default_config_hash: 3V-l1uuTcyirYOGLPZV5HWaDfr02uEbWZJIwc8Byz-c
+id: devel
+label: Development
+description: ''
+locked: true

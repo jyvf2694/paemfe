@@ -1,0 +1,8 @@
+uuid: 0621574a-951f-44aa-8e1b-d53b8e361e9d
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de normativa'
+vid: normative_type
+description: ''
+weight: 0

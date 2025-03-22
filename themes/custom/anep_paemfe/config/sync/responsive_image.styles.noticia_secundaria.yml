@@ -1,0 +1,24 @@
+uuid: 69f65386-0dc4-4287-92c7-19b2dc8a80f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.noticia_principal
+    - image.style.noticia_secundaria
+  theme:
+    - dges
+id: noticia_secundaria
+label: 'Noticia secundaria'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: noticia_secundaria
+    breakpoint_id: bootstrap_barrio.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: noticia_principal
+    breakpoint_id: bootstrap_barrio.small
+    multiplier: 1x
+breakpoint_group: dges
+fallback_image_style: noticia_secundaria

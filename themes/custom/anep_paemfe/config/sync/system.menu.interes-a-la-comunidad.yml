@@ -1,0 +1,8 @@
+uuid: 556ea6fb-dafb-4936-9426-0c3a2c4e3826
+langcode: es
+status: true
+dependencies: {  }
+id: interes-a-la-comunidad
+label: 'Interés a la comunidad'
+description: ''
+locked: false

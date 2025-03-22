@@ -1,0 +1,10 @@
+uuid: c78f1e71-5391-4510-aa23-001f502e6c3f
+langcode: es
+status: true
+dependencies: {  }
+id: institutional_news
+label: 'Noticias Institucionales'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

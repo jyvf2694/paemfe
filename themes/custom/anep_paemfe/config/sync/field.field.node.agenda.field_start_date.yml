@@ -1,0 +1,21 @@
+uuid: bc584c3d-3e92-4026-bb08-fe5aaa2fd60e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start_date
+    - node.type.agenda
+  module:
+    - datetime
+id: node.agenda.field_start_date
+field_name: field_start_date
+entity_type: node
+bundle: agenda
+label: 'Día inicio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

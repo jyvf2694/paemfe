@@ -1,0 +1,39 @@
+uuid: 26cb8b34-ea90-4331-8ba5-e4ffbc9ecebf
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.formalities_services.body
+    - field.field.node.formalities_services.field_file
+    - field.field.node.formalities_services.field_lead
+    - field.field.node.formalities_services.field_public
+    - field.field.node.formalities_services.field_theme
+    - node.type.formalities_services
+  module:
+    - text
+    - user
+id: node.formalities_services.teaser
+targetEntityType: node
+bundle: formalities_services
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_file: true
+  field_lead: true
+  field_public: true
+  field_theme: true
+  langcode: true

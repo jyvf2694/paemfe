@@ -1,0 +1,30 @@
+uuid: 843fea0c-0a18-4d29-aece-1a69d3840529
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f9a826e3-7f77-4797-babc-423b4b3dcc68'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: bloqueprueba
+theme: dges
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'block_content:f9a826e3-7f77-4797-babc-423b4b3dcc68'
+settings:
+  id: 'block_content:f9a826e3-7f77-4797-babc-423b4b3dcc68'
+  label: 'Sidebar Links - Home'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

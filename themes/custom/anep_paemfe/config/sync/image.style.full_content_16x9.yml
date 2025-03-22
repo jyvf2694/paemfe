@@ -1,0 +1,15 @@
+uuid: 10998531-5856-44d1-85db-667d2190b278
+langcode: es
+status: true
+dependencies: {  }
+name: full_content_16x9
+label: 'Full Content (16x9)'
+effects:
+  da6753fb-fa30-41c8-aff8-020a4406043a:
+    uuid: da6753fb-fa30-41c8-aff8-020a4406043a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1288
+      height: 724
+      anchor: center-center

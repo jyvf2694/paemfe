@@ -1,0 +1,14 @@
+uuid: fcbf73e5-d57e-4d7a-8380-6a072d3c02d0
+langcode: es
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: db_content
+name: 'Db - content'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words

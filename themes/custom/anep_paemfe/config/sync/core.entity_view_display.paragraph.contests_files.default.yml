@@ -1,0 +1,71 @@
+uuid: d798f55c-5760-4bed-b796-644b743f4dfe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contests_files.bp_text
+    - field.field.paragraph.contests_files.field_associated_state
+    - field.field.paragraph.contests_files.field_file_media
+    - field.field.paragraph.contests_files.field_normativity
+    - field.field.paragraph.contests_files.field_publication_date
+    - field.field.paragraph.contests_files.field_title
+    - paragraphs.paragraphs_type.contests_files
+  module:
+    - datetime
+    - file
+    - text
+id: paragraph.contests_files.default
+targetEntityType: paragraph
+bundle: contests_files
+mode: default
+content:
+  bp_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_associated_state:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_file_media:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_normativity:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_publication_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  search_api_excerpt: true

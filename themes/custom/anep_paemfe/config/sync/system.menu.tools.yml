@@ -1,0 +1,10 @@
+uuid: 99191471-a6ab-4968-8573-18764ff1d304
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BCM-vV1zzRaLHN18dqAR_CuGOj8AFJvTx7BKl_8Gcxc
+id: tools
+label: Herramientas
+description: ''
+locked: true

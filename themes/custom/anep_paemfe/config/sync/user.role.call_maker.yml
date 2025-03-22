@@ -1,0 +1,25 @@
+uuid: 03364b8c-1368-4c31-9815-0f101ff0ae63
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.called
+  module:
+    - node
+    - system
+    - toolbar
+    - tour
+    - view_unpublished
+id: call_maker
+label: 'Creador de Llamados'
+weight: 6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'create called content'
+  - 'view any unpublished called content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

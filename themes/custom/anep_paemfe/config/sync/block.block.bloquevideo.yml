@@ -1,0 +1,30 @@
+uuid: 672a7b19-0fc1-490d-a796-1947cb2c2bc2
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:65510219-6cb6-472a-8c72-bf1afade86de'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: bloquevideo
+theme: dges
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'block_content:65510219-6cb6-472a-8c72-bf1afade86de'
+settings:
+  id: 'block_content:65510219-6cb6-472a-8c72-bf1afade86de'
+  label: 'Sidebar Videos - Home'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

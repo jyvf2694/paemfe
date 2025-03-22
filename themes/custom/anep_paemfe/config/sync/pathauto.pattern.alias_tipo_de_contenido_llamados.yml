@@ -1,0 +1,22 @@
+uuid: 98af4b4a-a6a1-46a2-9a9c-aaf7145935e6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: alias_tipo_de_contenido_llamados
+label: 'Alias tipo de contenido llamados'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  72becdcc-ed52-407e-a24c-c1dd748e649f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 72becdcc-ed52-407e-a24c-c1dd748e649f
+    context_mapping:
+      node: node
+    bundles:
+      called: called
+selection_logic: and
+weight: -5
+relationships: {  }

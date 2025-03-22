@@ -1,0 +1,22 @@
+uuid: 9463104e-b653-4fbe-8d19-2c96a6161760
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: alias_tipo_de_contenido_agenda
+label: 'Alias tipo de contenido agenda'
+type: 'canonical_entities:node'
+pattern: 'comunicacion/[node:content-type]/[node:title]'
+selection_criteria:
+  e6462dc1-5171-4cd7-927e-6722b54120f8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e6462dc1-5171-4cd7-927e-6722b54120f8
+    context_mapping:
+      node: node
+    bundles:
+      agenda: agenda
+selection_logic: and
+weight: -5
+relationships: {  }

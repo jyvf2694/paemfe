@@ -1,0 +1,15 @@
+uuid: 354fe550-99bf-40fa-957a-a77af61eb71a
+langcode: es
+status: true
+dependencies: {  }
+name: vertical_9_16
+label: 'Vertical 9:16'
+effects:
+  7569bb72-49fd-4870-a59d-8ea20f43617c:
+    uuid: 7569bb72-49fd-4870-a59d-8ea20f43617c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 1280
+      anchor: center-center

@@ -1,0 +1,10 @@
+uuid: 2353a6ff-c70a-4db0-b1a8-80197f6d25d5
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.noticias_secu
+label: 'Noticias secundarias'
+targetEntityType: media
+cache: true

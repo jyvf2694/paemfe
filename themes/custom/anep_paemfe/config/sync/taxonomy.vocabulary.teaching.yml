@@ -1,0 +1,8 @@
+uuid: 5ecd71cd-53a5-4fdd-80df-798c719e75a1
+langcode: es
+status: true
+dependencies: {  }
+name: Docencia
+vid: teaching
+description: ''
+weight: 0

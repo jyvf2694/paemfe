@@ -1,0 +1,22 @@
+uuid: 97444fee-2bc6-42ba-8e71-12b2e7772209
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: alias_tipo_de_contenido_becas_y_convenios
+label: 'Alias tipo de contenido becas y convenios'
+type: 'canonical_entities:node'
+pattern: 'comunicacion/[node:content-type]/[node:title]'
+selection_criteria:
+  e628a314-fd0a-4abc-bfae-0487a6e1666d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e628a314-fd0a-4abc-bfae-0487a6e1666d
+    context_mapping:
+      node: node
+    bundles:
+      scholarships_and_agreements: scholarships_and_agreements
+selection_logic: and
+weight: -5
+relationships: {  }

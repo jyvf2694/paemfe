@@ -1,0 +1,20 @@
+uuid: 6082a992-1a14-44d2-9891-d3d851d572c8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_normativity
+field_name: field_normativity
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

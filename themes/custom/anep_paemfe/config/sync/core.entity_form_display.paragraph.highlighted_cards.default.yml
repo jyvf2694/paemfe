@@ -1,0 +1,47 @@
+uuid: e309cc68-2ef2-4fe8-b961-45d973d06549
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.highlighted_cards.field_news_1
+    - field.field.paragraph.highlighted_cards.field_news_2
+    - field.field.paragraph.highlighted_cards.field_news_3
+    - paragraphs.paragraphs_type.highlighted_cards
+id: paragraph.highlighted_cards.default
+targetEntityType: paragraph
+bundle: highlighted_cards
+mode: default
+content:
+  field_news_1:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_news_2:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_news_3:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

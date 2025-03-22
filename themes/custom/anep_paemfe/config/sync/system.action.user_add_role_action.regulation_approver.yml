@@ -1,0 +1,14 @@
+uuid: e0fc0d23-9412-4c8d-9a2f-5774dfe7fc3c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regulation_approver
+  module:
+    - user
+id: user_add_role_action.regulation_approver
+label: 'Añade el rol regulation_approver al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regulation_approver

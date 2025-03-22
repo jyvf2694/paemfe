@@ -1,0 +1,8 @@
+uuid: f30b4367-f28b-40ba-8d89-a5e194c9e186
+langcode: es
+status: true
+dependencies: {  }
+name: Subtipo
+vid: subtype
+description: ''
+weight: 0

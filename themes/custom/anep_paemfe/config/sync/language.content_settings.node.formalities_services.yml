@@ -1,0 +1,11 @@
+uuid: 9c3f9b5c-2217-4144-aa8f-8755f74a13f7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.formalities_services
+id: node.formalities_services
+target_entity_type_id: node
+target_bundle: formalities_services
+default_langcode: site_default
+language_alterable: false

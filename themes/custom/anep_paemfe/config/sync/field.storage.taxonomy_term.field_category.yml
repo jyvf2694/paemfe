@@ -1,0 +1,33 @@
+uuid: 26cb2ddd-617b-498f-8c59-996437f203e0
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_category
+field_name: field_category
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: liceos
+      label: Liceos
+    -
+      value: oficinas-centrales
+      label: 'Oficinas centrales'
+    -
+      value: inspecciones
+      label: Inspecciones
+    -
+      value: inspeccion-asignatura
+      label: 'Inspección de asignatura'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

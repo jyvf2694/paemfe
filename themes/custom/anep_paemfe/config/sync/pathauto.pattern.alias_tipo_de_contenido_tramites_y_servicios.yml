@@ -1,0 +1,22 @@
+uuid: 1454df82-1402-46ea-8e6d-7ffcb0f58d0e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: alias_tipo_de_contenido_tramites_y_servicios
+label: 'Alias tipo de contenido trámites y servicios'
+type: 'canonical_entities:node'
+pattern: 'tramites/[node:title]'
+selection_criteria:
+  7f98b61b-f261-4ce2-b280-b6643c582ccc:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7f98b61b-f261-4ce2-b280-b6643c582ccc
+    context_mapping:
+      node: node
+    bundles:
+      formalities_services: formalities_services
+selection_logic: and
+weight: -5
+relationships: {  }

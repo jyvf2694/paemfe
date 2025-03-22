@@ -1,0 +1,30 @@
+uuid: c55ad06f-c115-4a30-9e55-f84e3a165222
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fd45b4dd-da03-4e20-ad3d-3dcd06c9b6a4'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: capacitacion
+theme: dges
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:fd45b4dd-da03-4e20-ad3d-3dcd06c9b6a4'
+settings:
+  id: 'block_content:fd45b4dd-da03-4e20-ad3d-3dcd06c9b6a4'
+  label: Capacitación
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /comunicacion/capacitaciones

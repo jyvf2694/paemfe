@@ -1,0 +1,14 @@
+uuid: 10a3f61c-8b62-4caa-bcc6-c9009c2ce54a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.regulations_maker
+  module:
+    - user
+id: user_add_role_action.regulations_maker
+label: 'Añade el rol Regulations Maker al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: regulations_maker

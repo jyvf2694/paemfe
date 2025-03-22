@@ -1,0 +1,101 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph in Bootstrap Paragraphs.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ *   - id: The paragraph ID.
+ *   - bundle: The type of the paragraph, for example, "image" or "text".
+ *   - authorid: The user ID of the paragraph author.
+ *   - createdtime: Formatted creation date. Preprocess functions can
+ *     reformat it by calling format_date() with the desired parameters on
+ *     $variables['paragraph']->getCreatedTime().
+ * - content: All paragraph items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - paragraphs: The current template type (also known as a "theming hook").
+ *   - paragraphs--type-[type]: The current paragraphs type. For example, if the paragraph is an
+ *     "Image" it would result in "paragraphs--type--image". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - paragraphs--view-mode--[view_mode]: The View Mode of the paragraph; for example, a
+ *     preview would result in: "paragraphs--view-mode--preview", and
+ *     default: "paragraphs--view-mode--default".
+ * - view_mode: View mode; for example, "preview" or "full".
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set imageStyle = content.bp_image_field['#items'][0].width > content.bp_image_field['#items'][0].height ? 'horizontal_16_9' : 'vertical_3_4' %}
+
+{% set parent = paragraph.getParentEntity() %}
+
+{% if parent.entityTypeId == 'paragraph' %}
+  {% set col_length = 0 %}
+  {% if parent.bundle == 'column' %}
+    {% set col_length = parent.field_column_wide_lg.value %}
+  {% endif %}
+{% endif %}
+
+{% if parent.entityTypeId == 'node' %}
+  {% set col_length = 12 %}
+{% endif %}
+
+{% if parent.entityTypeId == 'block_content' %}
+  {% set col_length = 12 %}
+{% endif %}
+
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  'paragraph--id--' ~ paragraph.id.value,
+  col_length < 6 ? 'image-text-full',
+  'position-relative mb-3',
+  imageStyle == 'vertical_3_4' ? 'vertical' : 'horizontal',
+] %}
+
+{% if content.field_link | render %}
+  {% set link_url = content.field_link.0['#url'] | render %}
+{% endif %}
+
+{% set image = {
+  '#theme':      'image_style',
+  '#style_name': imageStyle,
+  '#uri':        content.bp_image_field['#items'].entity.uri.value,
+  '#alt':        content.bp_image_field['#items'].entity.alt,
+  '#attributes': { class: '' },
+} %}
+
+<div {{ attributes.addClass(classes) }}>
+  {% if image %}
+    {{ image }}
+  {% endif %}
+  <div class="p-4 {{ color == 'blanco' ? 'text-white'}}">
+    {% if content.field_title | render %}
+      <h2>
+        {% if link_url %}
+          <a href="{{ link_url }}" class="link_url">
+        {% endif %}
+          {{ content.field_title | render | striptags }}
+        {% if link_url %}
+          </a>
+        {% endif %}
+      </h2>
+    {% endif %}
+    {% if content.bp_text | render %}
+      {{ content.bp_text }}
+    {% endif %}
+  </div>
+</div>

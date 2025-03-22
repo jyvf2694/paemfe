@@ -1,0 +1,30 @@
+uuid: 6dd88e7b-25fc-46f3-83e1-de9315fb6ad5
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f3c41b69-5225-477a-980b-706bd2d90eae'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: agendahomesidebar
+theme: dges
+region: sidebar_second
+weight: -15
+provider: null
+plugin: 'block_content:f3c41b69-5225-477a-980b-706bd2d90eae'
+settings:
+  id: 'block_content:f3c41b69-5225-477a-980b-706bd2d90eae'
+  label: 'Sidebar Agenda - Home'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

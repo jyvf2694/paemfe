@@ -1,0 +1,22 @@
+uuid: 3e8fb105-311f-4b45-be83-a7f58372cc37
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - anep
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: anep_powered
+theme: anep
+region: top_header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

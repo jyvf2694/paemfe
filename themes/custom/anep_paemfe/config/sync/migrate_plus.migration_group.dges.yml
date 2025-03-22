@@ -1,0 +1,10 @@
+uuid: 5c18ac8c-1114-453d-b494-2fee82ec2ad9
+langcode: es
+status: true
+dependencies: {  }
+id: dges
+label: DGES
+description: 'Un contenedor para cualquier migración del grupo DGES.'
+source_type: ''
+module: null
+shared_configuration: null

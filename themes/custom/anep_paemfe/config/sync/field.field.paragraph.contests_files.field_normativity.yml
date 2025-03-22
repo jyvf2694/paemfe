@@ -1,0 +1,29 @@
+uuid: dc7fb3d4-0b04-4b51-8cf3-50723cad37f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_normativity
+    - node.type.regulations_resolutions
+    - paragraphs.paragraphs_type.contests_files
+id: paragraph.contests_files.field_normativity
+field_name: field_normativity
+entity_type: paragraph
+bundle: contests_files
+label: 'Referencia Normativa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      regulations_resolutions: regulations_resolutions
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

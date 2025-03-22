@@ -1,0 +1,21 @@
+uuid: 76e9a64c-7cb9-465e-9ff4-db4d0e984817
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lead
+    - node.type.formalities_services
+  module:
+    - text
+id: node.formalities_services.field_lead
+field_name: field_lead
+entity_type: node
+bundle: formalities_services
+label: Resumen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,23 @@
+uuid: 373070bb-6910-4bb8-914b-016ce5f3911c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_numeric
+    - node.type.regulations_resolutions
+id: node.regulations_resolutions.field_numeric
+field_name: field_numeric
+entity_type: node
+bundle: regulations_resolutions
+label: Numero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

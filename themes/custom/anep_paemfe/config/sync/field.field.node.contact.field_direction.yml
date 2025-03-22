@@ -1,0 +1,19 @@
+uuid: 18ccbe21-370e-4122-904f-90dbd8c5ef69
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_direction
+    - node.type.contact
+id: node.contact.field_direction
+field_name: field_direction
+entity_type: node
+bundle: contact
+label: Dirección
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

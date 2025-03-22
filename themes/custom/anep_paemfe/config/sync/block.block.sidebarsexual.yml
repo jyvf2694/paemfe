@@ -1,0 +1,30 @@
+uuid: 2e550c0e-5b64-4b56-8664-c5cbf96d5c66
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:521afaa8-95ed-4981-b14e-cf33801df1c7'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: sidebarsexual
+theme: dges
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:521afaa8-95ed-4981-b14e-cf33801df1c7'
+settings:
+  id: 'block_content:521afaa8-95ed-4981-b14e-cf33801df1c7'
+  label: 'Sidebar sexual'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /comision-ed-sexual

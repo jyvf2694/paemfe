@@ -1,0 +1,44 @@
+uuid: ef268c3b-5132-4b16-a781-a06b7c7863d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.flip_cards.bp_header
+    - field.field.paragraph.flip_cards.bp_link
+    - field.field.paragraph.flip_cards.bp_text
+    - paragraphs.paragraphs_type.flip_cards
+  module:
+    - link
+    - text
+id: paragraph.flip_cards.default
+targetEntityType: paragraph
+bundle: flip_cards
+mode: default
+content:
+  bp_header:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  bp_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,88 @@
+uuid: 29ee1572-da04-45db-881d-2ed2ed6ade44
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contests_files.bp_text
+    - field.field.paragraph.contests_files.field_associated_state
+    - field.field.paragraph.contests_files.field_file_media
+    - field.field.paragraph.contests_files.field_normativity
+    - field.field.paragraph.contests_files.field_publication_date
+    - field.field.paragraph.contests_files.field_title
+    - paragraphs.paragraphs_type.contests_files
+  module:
+    - datetime
+    - field_group
+    - file
+    - text
+third_party_settings:
+  field_group:
+    group_terminos:
+      children:
+        - field_associated_state
+        - field_normativity
+      label: Terminos
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: true
+        description: ''
+        required_fields: true
+id: paragraph.contests_files.default
+targetEntityType: paragraph
+bundle: contests_files
+mode: default
+content:
+  bp_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_associated_state:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_file_media:
+    type: file_generic
+    weight: 6
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_normativity:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_publication_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

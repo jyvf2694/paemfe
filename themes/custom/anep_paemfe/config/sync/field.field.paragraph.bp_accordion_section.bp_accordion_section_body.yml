@@ -1,0 +1,187 @@
+uuid: a37e8f90-255d-4ae7-b8fe-8d7727a43351
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_accordion_section_body
+    - paragraphs.paragraphs_type.bp_accordion_section
+    - paragraphs.paragraphs_type.bp_blank
+    - paragraphs.paragraphs_type.bp_block
+    - paragraphs.paragraphs_type.bp_carousel
+    - paragraphs.paragraphs_type.bp_column_wrapper
+    - paragraphs.paragraphs_type.bp_columns
+    - paragraphs.paragraphs_type.bp_columns_three_uneven
+    - paragraphs.paragraphs_type.bp_columns_two_uneven
+    - paragraphs.paragraphs_type.bp_image
+    - paragraphs.paragraphs_type.bp_modal
+    - paragraphs.paragraphs_type.bp_photo
+    - paragraphs.paragraphs_type.bp_simple
+    - paragraphs.paragraphs_type.bp_tab_section
+    - paragraphs.paragraphs_type.bp_tabs
+    - paragraphs.paragraphs_type.bp_view
+    - paragraphs.paragraphs_type.columns
+    - paragraphs.paragraphs_type.community_news
+    - paragraphs.paragraphs_type.contact
+    - paragraphs.paragraphs_type.contests_files
+    - paragraphs.paragraphs_type.flip_cards
+    - paragraphs.paragraphs_type.highlighted_cards
+    - paragraphs.paragraphs_type.image_videos
+    - paragraphs.paragraphs_type.image_with_text
+    - paragraphs.paragraphs_type.institutional_news
+    - paragraphs.paragraphs_type.link_list
+    - paragraphs.paragraphs_type.link_list_item
+    - paragraphs.paragraphs_type.list_of_links
+    - paragraphs.paragraphs_type.noticias_institucionales_parent
+    - paragraphs.paragraphs_type.title
+    - paragraphs.paragraphs_type.title_grid
+    - paragraphs.paragraphs_type.videos
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 3alLeNHMVDXMxWShInYNi9TZe1FF61W8dIWYQT6a2I0
+id: paragraph.bp_accordion_section.bp_accordion_section_body
+field_name: bp_accordion_section_body
+entity_type: paragraph
+bundle: bp_accordion_section
+label: 'Accordion Section Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      bp_simple: bp_simple
+      bp_image: bp_image
+      bp_blank: bp_blank
+      bp_columns: bp_columns
+      bp_columns_three_uneven: bp_columns_three_uneven
+      bp_columns_two_uneven: bp_columns_two_uneven
+      bp_block: bp_block
+      bp_modal: bp_modal
+      bp_view: bp_view
+      bp_carousel: bp_carousel
+      bp_tabs: bp_tabs
+      bp_tab_section: bp_tab_section
+      bp_column_wrapper: bp_column_wrapper
+      bp_photo: bp_photo
+      columns: columns
+      community_news: community_news
+      contact: contact
+      contests_files: contests_files
+      flip_cards: flip_cards
+      highlighted_cards: highlighted_cards
+      image_videos: image_videos
+      image_with_text: image_with_text
+      institutional_news: institutional_news
+      link_list: link_list
+      link_list_item: link_list_item
+      list_of_links: list_of_links
+      noticias_institucionales_parent: noticias_institucionales_parent
+      title: title
+      title_grid: title_grid
+      videos: videos
+    negate: 0
+    target_bundles_drag_drop:
+      bp_accordion:
+        weight: -22
+        enabled: false
+      bp_accordion_section:
+        weight: -21
+        enabled: false
+      bp_blank:
+        weight: -29
+        enabled: true
+      bp_block:
+        weight: -25
+        enabled: true
+      bp_carousel:
+        weight: -20
+        enabled: true
+      bp_column_wrapper:
+        weight: 42
+        enabled: true
+      bp_columns:
+        weight: -28
+        enabled: true
+      bp_columns_three_uneven:
+        weight: -27
+        enabled: true
+      bp_columns_two_uneven:
+        weight: -26
+        enabled: true
+      bp_image:
+        weight: -30
+        enabled: true
+      bp_modal:
+        weight: -24
+        enabled: true
+      bp_photo:
+        weight: 45
+        enabled: true
+      bp_simple:
+        weight: -31
+        enabled: true
+      bp_tab_section:
+        weight: -18
+        enabled: true
+      bp_tabs:
+        weight: -19
+        enabled: true
+      bp_view:
+        weight: -23
+        enabled: true
+      column:
+        weight: 50
+        enabled: false
+      columns:
+        weight: 51
+        enabled: true
+      community_news:
+        weight: 52
+        enabled: true
+      contact:
+        weight: 53
+        enabled: true
+      contests_files:
+        weight: 54
+        enabled: true
+      flip_cards:
+        weight: 55
+        enabled: true
+      highlighted_cards:
+        weight: 56
+        enabled: true
+      image_videos:
+        weight: 57
+        enabled: true
+      image_with_text:
+        weight: 58
+        enabled: true
+      institutional_news:
+        weight: 59
+        enabled: true
+      link_list:
+        weight: 60
+        enabled: true
+      link_list_item:
+        weight: 61
+        enabled: true
+      list_of_links:
+        weight: 62
+        enabled: true
+      noticias_institucionales_parent:
+        weight: 63
+        enabled: true
+      title:
+        weight: 64
+        enabled: true
+      title_grid:
+        weight: 65
+        enabled: true
+      videos:
+        weight: 66
+        enabled: true
+field_type: entity_reference_revisions

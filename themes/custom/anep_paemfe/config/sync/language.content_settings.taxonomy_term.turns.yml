@@ -1,0 +1,11 @@
+uuid: 70edb9fc-8c41-46d3-b1e1-667ccc071c90
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.turns
+id: taxonomy_term.turns
+target_entity_type_id: taxonomy_term
+target_bundle: turns
+default_langcode: site_default
+language_alterable: false

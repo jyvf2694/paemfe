@@ -1,0 +1,8 @@
+uuid: f50f3b3f-5bc8-45a8-bf41-3b768e966c3d
+langcode: es
+status: true
+dependencies: {  }
+name: Temas
+vid: theme
+description: ''
+weight: 0

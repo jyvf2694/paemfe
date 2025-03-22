@@ -1,0 +1,31 @@
+uuid: d719226a-e107-4979-870a-0e99dc8fdc96
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trainings
+  module:
+    - node
+    - system
+    - toolbar
+    - tour
+    - view_unpublished
+id: training_creator_and_approver
+label: 'Creador/Aprobador de Capacitaciones'
+weight: 11
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer nodes'
+  - 'create trainings content'
+  - 'edit any trainings content'
+  - 'revert all revisions'
+  - 'revert trainings revisions'
+  - 'view all revisions'
+  - 'view any unpublished trainings content'
+  - 'view own unpublished content'
+  - 'view the administration theme'
+  - 'view trainings revisions'

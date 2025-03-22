@@ -1,0 +1,11 @@
+uuid: 3cbd9232-683f-455d-8ec5-94da0b2bc98f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.atd
+id: node.atd
+target_entity_type_id: node
+target_bundle: atd
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: f8d49453-8245-45e1-93c5-1be0790c4d05
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_inspector
+    - node.type.contact
+id: node.contact.field_name_inspector
+field_name: field_name_inspector
+entity_type: node
+bundle: contact
+label: 'Inspector regional'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

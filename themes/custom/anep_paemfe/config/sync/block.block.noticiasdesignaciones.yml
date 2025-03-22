@@ -1,0 +1,30 @@
+uuid: f4269661-aeb7-4820-a027-7e2b05944b6b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:de7687c7-e7da-4d98-80d6-82f0eac76243'
+  module:
+    - block_content
+    - system
+  theme:
+    - dges
+id: noticiasdesignaciones
+theme: dges
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'block_content:de7687c7-e7da-4d98-80d6-82f0eac76243'
+settings:
+  id: 'block_content:de7687c7-e7da-4d98-80d6-82f0eac76243'
+  label: 'Noticias Designaciones'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/designaciones/calendarios/*'

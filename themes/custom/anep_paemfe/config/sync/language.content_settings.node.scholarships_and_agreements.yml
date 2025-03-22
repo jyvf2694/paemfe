@@ -1,0 +1,11 @@
+uuid: 52b19957-89df-4379-aab1-d7b60ac4a3da
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.scholarships_and_agreements
+id: node.scholarships_and_agreements
+target_entity_type_id: node
+target_bundle: scholarships_and_agreements
+default_langcode: site_default
+language_alterable: false

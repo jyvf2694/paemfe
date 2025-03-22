@@ -1,0 +1,10 @@
+uuid: eb15fa22-c25a-4c25-987c-dd15b256c2ac
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
+name: Etiquetas
+vid: tags
+description: ''
+weight: 0

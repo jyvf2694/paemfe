@@ -1,0 +1,10 @@
+uuid: b57004e9-a148-4360-a2c1-2647cccdc6ea
+langcode: es
+status: true
+dependencies: {  }
+id: highlighted_cards
+label: 'Tarjetas Destacadas'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

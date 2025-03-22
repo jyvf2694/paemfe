@@ -1,0 +1,11 @@
+uuid: cf9bf957-a373-419d-910d-4fed3e3c766c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.regulations_resolutions
+id: node.regulations_resolutions
+target_entity_type_id: node
+target_bundle: regulations_resolutions
+default_langcode: site_default
+language_alterable: false

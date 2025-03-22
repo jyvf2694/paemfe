@@ -1,0 +1,10 @@
+uuid: 5233d4e8-6f54-4270-b3ce-0a671848d275
+langcode: es
+status: true
+dependencies: {  }
+id: community_news
+label: 'Noticias Comunidad'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

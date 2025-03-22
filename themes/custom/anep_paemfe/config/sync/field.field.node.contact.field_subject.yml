@@ -1,0 +1,29 @@
+uuid: e714940e-2286-4b0c-8cb3-0aca988358b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subject
+    - node.type.contact
+    - taxonomy.vocabulary.subject
+id: node.contact.field_subject
+field_name: field_subject
+entity_type: node
+bundle: contact
+label: Asignatura
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subject: subject
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

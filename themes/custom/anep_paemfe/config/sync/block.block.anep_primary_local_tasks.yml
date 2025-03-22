@@ -1,0 +1,22 @@
+uuid: 3deba4a4-c0a8-4739-8f93-4abd1a6583bb
+langcode: es
+status: true
+dependencies:
+  theme:
+    - anep
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: anep_primary_local_tasks
+theme: anep
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas principales'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

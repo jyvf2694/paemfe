@@ -1,0 +1,22 @@
+uuid: 42350726-7797-4983-83b9-fc2890131eb7
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dges
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: dges_content
+theme: dges
+region: content
+weight: -14
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

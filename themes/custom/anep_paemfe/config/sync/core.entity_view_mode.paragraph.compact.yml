@@ -1,0 +1,10 @@
+uuid: c4048d7c-b50c-4aa9-95ac-07803f26e7cc
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.compact
+label: Compacto
+targetEntityType: paragraph
+cache: true

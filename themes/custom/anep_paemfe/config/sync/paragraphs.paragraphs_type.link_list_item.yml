@@ -1,0 +1,10 @@
+uuid: 5c8e0564-de9b-4f57-a4cd-0d83d4b08bea
+langcode: es
+status: true
+dependencies: {  }
+id: link_list_item
+label: 'Lista de Enlaces Ítem'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

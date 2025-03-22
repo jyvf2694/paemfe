@@ -1,0 +1,11 @@
+uuid: 5dec58bf-d315-462a-b5c0-5f2858ed2f60
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.teaching
+id: taxonomy_term.teaching
+target_entity_type_id: taxonomy_term
+target_bundle: teaching
+default_langcode: site_default
+language_alterable: false

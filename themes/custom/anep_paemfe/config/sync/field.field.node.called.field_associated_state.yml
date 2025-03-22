@@ -1,0 +1,29 @@
+uuid: b53dd10c-0103-4549-8351-275f0e64d865
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_state
+    - node.type.called
+    - taxonomy.vocabulary.associated_state
+id: node.called.field_associated_state
+field_name: field_associated_state
+entity_type: node
+bundle: called
+label: 'Estado asociado'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      associated_state: associated_state
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,47 @@
+uuid: d4ea058e-fb7e-4a22-b42e-f08aa19f32b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.institutional_news.field_news_1
+    - field.field.paragraph.institutional_news.field_news_2
+    - field.field.paragraph.institutional_news.field_news_3
+    - paragraphs.paragraphs_type.institutional_news
+id: paragraph.institutional_news.default
+targetEntityType: paragraph
+bundle: institutional_news
+mode: default
+content:
+  field_news_1:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_news_2:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_news_3:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

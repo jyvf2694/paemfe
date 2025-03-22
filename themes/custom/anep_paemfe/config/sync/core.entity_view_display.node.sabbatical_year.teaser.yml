@@ -1,0 +1,43 @@
+uuid: 49324ff9-4cc8-4f88-9c34-20d914774132
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sabbatical_year.body
+    - field.field.node.sabbatical_year.field_author
+    - field.field.node.sabbatical_year.field_date
+    - field.field.node.sabbatical_year.field_file
+    - field.field.node.sabbatical_year.field_lead
+    - field.field.node.sabbatical_year.field_public
+    - field.field.node.sabbatical_year.field_theme
+    - node.type.sabbatical_year
+  module:
+    - text
+    - user
+id: node.sabbatical_year.teaser
+targetEntityType: node
+bundle: sabbatical_year
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_author: true
+  field_date: true
+  field_file: true
+  field_lead: true
+  field_public: true
+  field_theme: true
+  langcode: true

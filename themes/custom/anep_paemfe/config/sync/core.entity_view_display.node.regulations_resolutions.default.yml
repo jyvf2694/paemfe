@@ -1,0 +1,90 @@
+uuid: 6d6cb6da-c9c3-48ca-9767-3fa6d7a8270c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.regulations_resolutions.body
+    - field.field.node.regulations_resolutions.field_date
+    - field.field.node.regulations_resolutions.field_file
+    - field.field.node.regulations_resolutions.field_normativity_type
+    - field.field.node.regulations_resolutions.field_numeric
+    - field.field.node.regulations_resolutions.field_ocr_description
+    - field.field.node.regulations_resolutions.field_proceedings
+    - field.field.node.regulations_resolutions.field_theme
+    - node.type.regulations_resolutions
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.regulations_resolutions.default
+targetEntityType: node
+bundle: regulations_resolutions
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_normativity_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_numeric:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_proceedings:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_theme:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_ocr_description: true
+  langcode: true
+  search_api_excerpt: true

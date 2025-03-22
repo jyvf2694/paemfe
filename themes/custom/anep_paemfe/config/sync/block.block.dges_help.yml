@@ -1,0 +1,22 @@
+uuid: b7383f21-c6a2-41e6-9f63-f577fd6a9a9a
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - dges
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: dges_help
+theme: dges
+region: top_header
+weight: -10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

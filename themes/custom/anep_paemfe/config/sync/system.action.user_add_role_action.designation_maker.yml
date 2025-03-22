@@ -1,0 +1,14 @@
+uuid: 9d2ecdea-5115-434f-8c44-3c7990917344
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.designation_maker
+  module:
+    - user
+id: user_add_role_action.designation_maker
+label: 'Añade el rol Designation maker al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: designation_maker
